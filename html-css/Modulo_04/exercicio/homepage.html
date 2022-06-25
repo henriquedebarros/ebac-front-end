@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>HTML - Henrique de Barros</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #004452;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			  background: #CAFFEC;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #F8F8FF;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #004452;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h2>Curso Front-end</h2>
+		</header>
+		<nav>
+			<h3>Páginas feitas em aula</h3>
+			<ol>
+				<li><a href="01_Intro.html">Introdução</a></li>
+				<li><a href="02_ListasLinks.html">Listas e Links</a></li>
+				<li><a href="03_Texto.html">Formatação de Texto</a></li>
+				<li><a href="04_Tabela.html">Tabelas</a></li>
+				<li><a href="05_Layout.html">Layouts</a></li>
+				<li><a href="06_Formulario.html">Formulários</a></li>
+			</ol>
+			<h3>Redes Profissionais</h3>
+			<ul>
+				<li>
+					<a href="https://www.linkedin.com/in/henriquedebarros/" target="_blank">
+						<img src="https://blog.waalaxy.com/wp-content/uploads/2021/01/Linkedin-Logo-300x188.png" height="50" alt="Logo LinkedIn">
+					</a>
+				</li>
+				<li>
+					<a href="https://www.behance.net/henriquedebarros"  target="_blank">
+						<img src="https://cdn-images-1.medium.com/max/280/1*nwC9IhBwXNLV1JgwEgetQw.jpeg" height="30" alt="Logo Behance">
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<section>
+			<article>				
+				<h1>Henrique de Barros</h1>
+				<p>UX Design | UI Design | Front End | Motion Designer</p>
+				<img src="https://henriquedebarros.files.wordpress.com/2022/02/perfil_duotone2.png" width="300">
+				<p>Olá! Eu sou formado em Comunicação com foco em <em>Audiovisual</em> pela <b>Universidade Federal de São Carlos</b> e possuo pós-graduação em <em>Experiência do Usuário (UX/UI)</em> pelo <b>Istituto Europeo di Design</b>. Tenho experiência profissional em edição de vídeo, motion graphics e criação de soluções para educação a distância, onde atuo há sete anos. Nessas posições pude desenvolver habilidades para criação de identidade visual, desenho de interfaces e gerenciamento de projeto.</p>
+				<h2>Experiências</h2>
+				<table border="0" width="100%">
+					<thead>
+						<tr align="left">
+							<th>Cargo</th>
+							<th>Empresa</th>
+							<th>Tempo</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr bgcolor="#fff">
+							<td>Editor de vídeo</td>
+							<td>Senac</td>
+							<td>4 anos</td>
+						</tr>
+						<tr>
+							<td>Motion Designer</td>
+							<td>Kroton</td>
+							<td>2 anos</td>
+						</tr>
+						<tr bgcolor="#fff">
+							<td>Editor de vídeo</td>
+							<td>Stoodi</td>
+							<td>1 ano</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr align="right" height="50">
+							<td colspan="3"><i>Dados de Junho de 2022</i></td>
+						</tr>
+					</tfoot>
+				</table>
+			</article>
+		</section>
+		<footer>
+			<p>Desenvolvido por Henrique de Barros</p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Formulário CSS</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+    </head>
+    <body>
+        <header>
+            <h2>Curso Front-End</h2>
+        </header>
+
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <article>
+                <h1>Formulário de contato</h1>
+                <p>Preencha os campos a seguir:</p>
+                <form method="post">
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu email">
+                    </div>
+                    <div>
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" rows="5"></textarea>
+                    </div>
+                    <div>
+                        <p>
+                            <label class="pergunta-inline">Quais linguagens você prefere?</label>
+                            <input type="radio" name="linguagens" value="HTML" id="l1html"><label for="l1html" class="opcoes">HTML</label>
+                            <input type="radio" name="linguagens" value="CSS" id="l1css"><label for="l1css" class="opcoes">CSS</label>
+                            <input type="radio" name="linguagens" value="JS" id="l1js"><label for="l1js" class="opcoes">JavaScript</label>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <label class="pergunta-inline">Quais linguagens você sabe?</label>
+                            <input type="checkbox" name="linguagens2" value="html" id="l2html"><label for="l2html" class="opcoes">HTML</label>
+                            <input type="checkbox" name="linguagens2" value="css" id="l2css"><label for="l2css" class="opcoes">CSS</label>
+                            <input type="checkbox" name="linguagens2" value="js" id="l2js"><label for="l2js" class="opcoes">JavaScript</label>
+                        </p>
+                    </div>
+                    <div>
+                        <label  class="pergunta-inline">Qual sua cor favorita?</label>
+                        <select>
+                            <option value="azul">Azul</option>
+                            <option value="verde">Verde</option>
+                            <option value="vermelho" selected>Vermelho</option>
+                        </select>
+                    </div>
+                    <p class="central">
+                        <input type="submit" value="Enviar">
+                    </p>
+                </form>
+            </article>
+        </section>
+
+        <footer>
+            <p>Desenvolvido por Henrique de Barros (C)</p>
+        </footer>
+    </body>
+</html>

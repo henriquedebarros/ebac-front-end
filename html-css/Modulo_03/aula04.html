@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML - Tabelas</title>
+    </head>
+    <body>
+        <h1>Tabelas</h1>
+        
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>Coluna A</th>
+                    <th>Coluna B</th>
+                    <th>Coluna C</th>
+                </tr>
+            </thead>
+            <tbody align="center">
+                <tr>
+                    <td>1A</td>
+                    <td>1B</td>
+                    <td>1C</td>
+                </tr>
+                <tr>
+                    <td>2A</td>
+                    <td>2B</td>
+                    <td>2C</td>
+                </tr>
+                <tr>
+                    <td>3A</td>
+                    <td colspan="2">3BC</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Rodapé da tabela</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h2>Tabela como layout</h2>
+        <table width="600">
+            <tr height="90">
+                <td colspan="4" bgcolor="#BCE" align="center">Cabeçalho</td>
+            </tr>
+            <tr height="300">
+                <td width="20" bgcolor="#0000AA"></td>
+                <td bgcolor="#CCC" width="50%">Coluna 1</td>
+                <td bgcolor="#AAA" width="40%">Coluna 2</td>
+                <td width="20" bgcolor="#0000AA"></td>
+            </tr>
+            <tr>
+                <td colspan="4" bgcolor="DDFFAA" align="center">Rodapé</td>
+            </tr>
+        </table>
+    </body>
+</html>

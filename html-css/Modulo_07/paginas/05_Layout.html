@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <title>HTML - Layouts</title>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- RESET -->
+		<link rel="stylesheet" type="text/css" href="./css/reset.css">
+		
+		<!-- GOOGLE FONTS -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+		
+		<!-- Estilos Personalizados -->
+		<link rel="stylesheet" type="text/css" href="../css/layout.css">
+		<link rel="stylesheet" type="text/css" href="../css/modulo-07.css">
+        <style>
+			* {box-sizing: border-box;}
+
+			body {font-family: Arial, Helvetica, sans-serif;}
+
+			/* Style the header */
+			header {
+                background-color: #666;
+                padding: 30px;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+                float: left;
+                width: 30%;
+                background: #ccc;
+                padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+                list-style-type: none;
+                padding: 0;
+			}
+
+			article {
+                float: left;
+                padding: 20px;
+                width: 70%;
+                background-color: #f1f1f1;
+			}
+
+
+			/* Clear floats after the columns */
+			section::after {
+                background: #ccc;
+                content: "";
+                display: table;
+                clear: both;
+			}
+
+
+			/* Style the footer */
+			footer {
+                background-color: #777;
+                padding: 10px;
+                text-align: center;
+                color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			 nav, article {
+                width: 100%;
+                height: auto;
+			 }
+
+			}
+		</style>
+    </head>
+    <body>
+        <header>
+            <h2>Curso Front-End HTML</h2>
+        </header>
+
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="02-Formulario.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <article>
+                <h1>Título do artigo</h1>
+                <p><b>Lorem ipsum dolor sit amet</b>, consectetur adipiscing elit. <small>Integer a gravida sapien</small>. Integer vitae nisl purus. Nulla rutrum pulvinar felis, nec scelerisque turpis rutrum nec. Nullam aliquet mauris non ipsum venenatis, id cursus felis interdum. Morbi et condimentum erat, ut consectetur est. Curabitur a finibus felis. Etiam ut porta eros, vel gravida nunc. Donec sagittis ante a efficitur porta.</p>
+                <p>Morbi in egestas sem. Proin consectetur odio quis lacus euismod suscipit. <em>Nulla lacinia bibendum enim</em>. Proin accumsan quam a finibus porttitor. Morbi eget ipsum diam. Nulla sit amet tortor tincidunt, posuere mauris sit amet, vehicula mauris. Ut commodo ultricies ullamcorper. Nunc a est tellus. Quisque porttitor scelerisque elit, at convallis justo pulvinar in. Aenean et lorem at ante viverra placerat sit amet sed mi. Ut porta consequat felis non commodo. Sed in lectus sem. Vestibulum mauris lacus, lacinia vel dignissim a, sagittis in ligula. Mauris congue eu lorem a vulputate. Pellentesque faucibus justo non quam dignissim, in rutrum libero posuere.</p>
+            </article>
+        </section>
+
+        <footer>
+            <p>Desenvolvido por Henrique de Barros</p>
+        </footer>
+    </body>
+</html>

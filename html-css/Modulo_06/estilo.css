@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+
+body, p {
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #004452;
+  padding: 1.5rem;
+  text-align: center;
+  color: #F8F8FF;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+nav {
+  float: left;
+  width: 30%;
+  display: block;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  width: 100%;
+  padding: 0 2rem;
+  position: relative;
+  top: 0;
+}
+
+ul li {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  padding: 0 0 0.5rem 0;
+  margin: 1rem 0 2rem 0;
+  border-bottom: 1px solid #004452;
+  width: 100%;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #004452;
+}
+
+article {
+  float: left;
+  width: 70%;
+  padding: 1rem;
+  background: #CAFFEC;
+  color: #004452;
+}
+
+h1 {
+  font-size: 1.5rem; 
+}
+
+form div {
+  background: #fff;
+  border: 0;
+  border-bottom: 3px solid #004452;
+  margin: 1rem 0 1.5rem 0;
+  padding: 1rem .75rem;
+  color: #595959;
+  border-radius: .5rem;
+}
+
+label {
+  margin-bottom: .5rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+}
+
+.pergunta-inline {
+  display: inline;
+}
+
+ .opcoes {
+  font-weight: normal;
+  display: inline;
+  margin: 0 1rem 0 .5rem;
+}
+
+[type="text"], [type="email"], textarea {
+  width: 100%;
+  font-size: .85rem;
+  padding: .5rem;
+}
+
+[type="radio"], [type="checkbox"], select {
+  font-size: .85rem;
+  margin-left: 1rem;
+}
+
+.central {
+  width: 100%;
+  text-align: center;
+}
+
+[type="submit"] {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  margin: .5rem 0 1rem 0;
+  border: 0;
+  border-radius: .5rem;
+  background: #2EAFAF;
+  color: #F8F8FF;
+  cursor: pointer;
+}
+
+section::after {
+  background: #ccc;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer p {
+  background-color: #004452;
+  font-size: .75rem;
+  font-style: italic;
+  padding: 1.5rem 0;
+  text-align: center;
+  color: #F8F8FF;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+
+  nav ul {
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    top: 0;
+  }
+  ul li {
+    font-size: 1rem;
+    padding: .5rem 0 .5rem 0;
+    margin: 0 0 1rem 0;
+    border-bottom: 1px solid #004452;
+    width: 100%;
+  }
+
+  [type="submit"] {
+    width: 100%;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    left: 0%;
+  }
+
+  .pergunta-inline {
+    display: block;
+  }
+
+  [type="radio"], [type="checkbox"], select {
+    margin-left: 0;
+  }
+
+}

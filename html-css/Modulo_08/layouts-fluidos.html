@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/layouts-fluidos.css">
+    <title>Layouts Fluídos</title>
+</head>
+<body>
+    <h1>Layouts Fluídos</h1>
+    <p>O layout se adapta a largura e altura da tela</p>
+
+    <section>
+        <h2>Largura 100%</h2>
+        <div class="width-100">
+            <nav>
+                Navegação
+            </nav>
+
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut repellat magni veritatis voluptate rerum? Ipsam esse nemo eos omnis repellat obcaecati dolorum quo, id doloribus voluptatum qui ipsum, fugiat expedita?</p>
+
+                <div class="fixed-width">Largura fixa</div>
+
+                <div class="background">Repetir imagem na horizontal</div>
+
+                <div>
+                    <picture>
+                        <source media="(min-width: 600px)" srcset="./images/coffee.jpg">
+                        <source media="(min-width: 280px)" srcset="./images/coffee-square.jpg">
+                        <img src="./images/coffee-sm.jpg" alt="Café">
+                    </picture>
+                </div>
+            </article>
+        </div>
+    </section>
+</body>
+</html>

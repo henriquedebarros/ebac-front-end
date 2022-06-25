@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <title>HTML - Tabelas</title>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- RESET -->
+		<link rel="stylesheet" type="text/css" href="./css/reset.css">
+		
+		<!-- GOOGLE FONTS -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+		
+		<!-- Estilos Personalizados -->
+		<!-- <link rel="stylesheet" type="text/css" href="../css/layout.css">
+		<link rel="stylesheet" type="text/css" href="../css/modulo-07.css"> -->
+    </head>
+    <body>
+        <h1>Tabelas</h1>
+        
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>Coluna A</th>
+                    <th>Coluna B</th>
+                    <th>Coluna C</th>
+                </tr>
+            </thead>
+            <tbody align="center">
+                <tr>
+                    <td>1A</td>
+                    <td>1B</td>
+                    <td>1C</td>
+                </tr>
+                <tr>
+                    <td>2A</td>
+                    <td>2B</td>
+                    <td>2C</td>
+                </tr>
+                <tr>
+                    <td>3A</td>
+                    <td colspan="2">3BC</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Rodapé da tabela</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h2>Tabela como layout</h2>
+        <table width="600">
+            <tr height="90">
+                <td colspan="4" bgcolor="#BCE" align="center">Cabeçalho</td>
+            </tr>
+            <tr height="300">
+                <td width="20" bgcolor="#0000AA"></td>
+                <td bgcolor="#CCC" width="50%">Coluna 1</td>
+                <td bgcolor="#AAA" width="40%">Coluna 2</td>
+                <td width="20" bgcolor="#0000AA"></td>
+            </tr>
+            <tr>
+                <td colspan="4" bgcolor="DDFFAA" align="center">Rodapé</td>
+            </tr>
+        </table>
+    </body>
+</html>
