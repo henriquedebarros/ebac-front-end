@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #004452;
+  padding: .5rem;
+  text-align: center;
+  color: #F8F8FF;
+}
+
+nav {
+  float: left;
+  width: 30%;
+  display: block;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+ul li {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  padding: 1rem 0 0.5rem 0;
+  margin: 3rem 0;
+  border-bottom: 1px solid #004452;
+  width: 100%;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #004452;
+}
+
+article {
+  float: left;
+  width: 70%;
+  padding: 1rem;
+  background: #CAFFEC;
+  color: #004452;
+}
+
+section::after {
+  background: #ccc;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer p {
+  background-color: #004452;
+  font-size: .75rem;
+  font-style: italic;
+  padding: 1.5rem 0;
+  text-align: center;
+  color: #F8F8FF;
+}
+
+
+
+/* Versão de Layout Mobile */
+
+@media (max-width: 400px) {
+  header div ~ p {
+    font-size: 1rem;
+    margin-top: .5rem;
+  }
+  
+  nav, article {
+    width: 100%;
+  }
+
+  section nav {
+    padding: 0.5rem 0;
+  }
+
+  nav ul {
+    padding: 0 2rem;
+    margin-bottom: .5rem;
+    position: relative;
+    top: 0;
+  }
+
+  nav ul li {
+    padding: 0;
+    margin: 0 0 1rem 0;
+    border-bottom: 0.5px solid #004452;
+    width: 100%;
+  }
+
+  ul li a {
+    font-size: .85rem;
+  }
+
+  .scroll_lateral {
+    width: 100%;
+    padding: 0 0 .5rem 0;
+    background-color: #004452;
+    overflow: scroll;
+  }
+
+  #tabela_financas th,
+  #tabela_financas td {
+    padding: .75rem;
+    font-size: .75rem;
+    font-weight: 400;
+    text-align: right;
+    vertical-align: bottom;
+  }
+
+  [type="submit"] {
+    width: 100%;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    left: 0%;
+  }
+
+  .pergunta-inline {
+    display: block;
+  }
+
+  [type="radio"], [type="checkbox"], select {
+    margin-left: 0;
+  }
+
+}
+
+/* Versão de Layout Tablet */
+
+@media (min-width: 401px) {
+
+  .scroll_lateral {
+    width: 100%;
+    padding: 0 0 .5rem 0;
+    overflow: scroll;
+  }
+}
+
+/* Versão de Layout Desktop */
+
+@media (min-width: 1024px) {
+  body {
+    margin: 0 auto;
+    max-width: 1200px;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+  }
+
+  nav {
+    background: transparent;
+  }
+
+  .scroll_lateral {
+    width: 100%;
+    padding: 0 0 .5rem 0;
+    overflow: scroll;
+  }
+
+  section nav {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+}
