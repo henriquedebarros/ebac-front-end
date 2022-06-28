@@ -136,6 +136,8 @@ section::after {
     margin: 0 auto 2rem auto;
     border-radius: 2rem;
     width: 90%;
+    height: 160px;
+    overflow: hidden;
 }
 
 .cards::after {
@@ -153,20 +155,32 @@ section::after {
     line-height: 1.5;
 }
 
-.cards img {
+.imgcard {
     float: left;
-    width: 15%;
+    display: block;
+    width: 20%;
+    height: 160px;
+    margin: 0 1.5rem 0 0;
     padding: .5rem;
-    margin-right: 1rem;
-    background: #3FB1B5;
-    border-radius: 2rem;
+    text-align: center;
 }
 
-.card-direito img {
-    float: right;
-    margin-right: 0;
-    margin-left: 1rem;
+.imgcard img {
+    width: 80%;
+}
+
+.img1 {
+    background: #3FB1B5;
+}
+
+.img2 {
     background: #FF7070;
+    float: right;
+    margin: 0 0 0 1.5rem;
+}
+
+.img3 {
+    background: #FCAC1F;
 }
 
 .card-direito {
@@ -212,4 +226,121 @@ footer ul li a {
 
 footer p {
     margin-top: 1rem;
+}
+
+@media (max-width: 400px) {
+    header {
+        padding: 1rem;
+        columns: 1;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+        
+    header img {
+        width: auto;
+        height: 2rem;
+        margin-bottom: .5rem;
+    }
+    
+    header nav ul li {
+        list-style: none;
+        display: inline-block;
+        width: 100%;
+        padding: .5rem;
+        margin: .25rem 0 .25rem 0;
+    }
+
+    header button {
+        width: 100%;
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+        margin: 1rem 0 0 0;
+    }
+
+    .inicial {
+        width: 100%;
+        margin-bottom: 2rem;
+        padding: 1rem;
+    }
+    
+    .chamada {
+        font-size: 1.5rem;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+    .inicial button {
+        width: 100%;
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+        margin-top: 1rem;
+    }
+
+    .inicial img {
+        float: right;
+    }
+
+    .chamada2 {
+        font-size: 1.25rem;
+        width: 90%;
+    }
+    
+    .cards {
+        margin: 0 auto 1rem auto;
+        height: auto;
+    }
+    
+    .cards h2 {
+        font-size: 1rem;
+        padding: .75rem 0 0 0;
+    }
+    
+    .cards p {
+        font-size: .85rem;
+        padding: .5rem 0 0 0;
+        line-height: 1.5;
+    }
+    
+    .imgcard {
+        float: left;
+        display: block;
+        width: 15%;
+        height: 200px;
+        margin: 0 .5rem 0 0;
+        padding: .5rem;
+        text-align: center;
+    }
+    
+    .imgcard img {
+        width: 600%;
+        opacity: 10%;
+    }
+    
+    .card-direito {
+        text-align: left;
+    }
+
+    footer {
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem 1rem 2rem 1rem;
+        text-align: center;
+    }
+    
+    footer img {
+        float: none;
+    }
+    
+    footer ul li {
+        display: inline;
+        margin: 0 1rem 0 0;
+        font-size: .75rem;
+    }
+    
+    footer ul li a {
+        color: #f4f4f4;
+    }
+    
+    footer p {
+        margin-top: 1rem;
+    }
 }
