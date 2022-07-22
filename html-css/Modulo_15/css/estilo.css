@@ -1,0 +1,59 @@
+html,
+body {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: block;
+  width: min(90%, 800px);
+  margin: 2rem auto;
+  background: #CAFFEC;
+  padding: 1rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  width: 80%;
+  margin: 0 auto 1rem auto;
+}
+
+input {
+  display: block;
+  width: 80%;
+  margin: 0 auto 1rem auto;
+  font-size: .85rem;
+  padding: .25em .75rem;
+  border-radius: .5em;
+}
+
+button {
+  display: block;
+  width: 80%;
+  margin: 2rem auto 1rem auto;
+  border: 0;
+  border-radius: .5em;
+  color: #fff;
+  background-color: #004452;
+  padding: .5em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0b6b7e;
+}
+
+.mensagem {
+  font-size: .75rem;
+  text-align: center;
+}
+
+.erro {
+  border-color: #f00;
+}
