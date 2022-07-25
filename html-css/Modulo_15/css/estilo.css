@@ -49,6 +49,13 @@ button:hover {
   background-color: #0b6b7e;
 }
 
+button[disabled],
+button[disabled]:hover {
+  color: #fff;
+  background-color: #ccc;
+  cursor: default;
+}
+
 .mensagem {
   font-size: .75rem;
   text-align: center;

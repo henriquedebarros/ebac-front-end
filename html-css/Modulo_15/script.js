@@ -1,4 +1,5 @@
 let allInputs = document.querySelectorAll('input');
+let varObriga = [0, 0];
 for(let campos of allInputs) {validacaoDeCampo(campos);}
 
 // for(let campoEmFoco of camposObrigatorios) {validaObrigatorios(campoEmFoco);}
@@ -11,8 +12,6 @@ for(let campos of allInputs) {validacaoDeCampo(campos);}
 
 function validacaoDeCampo(campoSemFoco){
     campoSemFoco.addEventListener("focusout", function(event) {
-
-        console.log(campoSemFoco);
         switch (this.classList[0]) {
             case "obrigatorio":
                 f_Obrigatorio(this);
@@ -41,10 +40,16 @@ function f_Obrigatorio(campo){
     if(campo.value == ""){
         document.querySelector('.mensagem').innerHTML = "O preenchimento do campo " + campo.name + " é obrigatório";
         campo.classList.add('erro');
+        campo.name == "Nome" ? varObriga[0] = 0: varObriga[1] = 0;
+        
     } else {
         document.querySelector('.mensagem').innerHTML = "";
         campo.classList.remove('erro');
+        campo.name == "Nome" ? varObriga[0] = 1: varObriga[1] = 1;
+        
     }
+    console.log(varObriga);
+    if(varObriga[0] == 1 && varObriga[1] == 1) { document.getElementById("btn_enviar").disabled = false }
 }
 
 function f_Email(campo){
