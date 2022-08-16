@@ -48,7 +48,6 @@ function f_Obrigatorio(campo){
         campo.name == "Nome" ? varObriga[0] = 1: varObriga[1] = 1;
         
     }
-    console.log(varObriga);
     if(varObriga[0] == 1 && varObriga[1] == 1) { document.getElementById("btn_enviar").disabled = false }
 }
 
