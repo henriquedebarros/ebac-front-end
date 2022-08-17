@@ -6,22 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/custom.css">
-    <title>Document</title>
+    <title>Munee - Versão Bootstrap</title>
 </head>
 <body>
-
     <header>
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <h1>Logo</h1>
+                <div class="col-4">
+                    <img src="./images/logo_cores.png" alt="">
                 </div>
-                <div class="col">
+                <div class="col-8">
                     <ul class="nav justify-content-end">
                         <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contatos">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#planos">Planos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
                     </ul>
                 </div>
             </div>
@@ -31,58 +30,66 @@
     <section id="sobre">
         <div class="container">
             <div class="row">
-                <div class="col-md-7 col-sm-12">
+                <div class="col-md-6 col-sm-12">
                     <h2>Sobre nós</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vero doloribus veniam incidunt reprehenderit. Itaque, culpa? Rerum, excepturi vero hic error aperiam voluptatibus qui ducimus cupiditate quod consequatur blanditiis aut.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vero doloribus veniam incidunt reprehenderit. Itaque, culpa? Rerum, excepturi vero hic error aperiam voluptatibus qui ducimus cupiditate quod consequatur blanditiis aut.</p>
-                    <a class="btn btn-lg btn-success">Botão</a>
+                    <p>A educação financeira que você precisa, explicada como você entende.</p>
+                    <p>Queremos que você tenha visibilidade do que acontece com a sua renda. Esteja no controle das movimentações e saiba para onde seu dinheiro está indo.</p>
+                    <p>Todo mundo precisa de uma ajuda! Conte com profissionais especialistas para manter tudo sob controle!</p>
+                    <p>Atualizações constantes de dados de todo o mercado financeiro para seu perfil e objetivo. O sistema passa a interpretar seus gastos e envia recomendações para elevar sua performance.</p>
+                    <a class="btn btn-lg btn-primary border-0"  data-bs-toggle="modal" data-bs-target="#modal-brand">Conheça a marca</a>
                 </div>
-                <div class="col-md-5 col-sm-12">
-                    <img src="./images/pexels-josh-sorenson-1714208.jpg" alt="Imagem Exemplo" class="img-fluid">
+                <div class="col-md-6 col-sm-12">
+                    <img src="./images/sobre_side.png" alt="Imagem Exemplo" class="img-fluid">
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="produtos">
-
+    <section id="planos">
         <div class="container">
             <div class="row">
-                <div class="col">
-
-                    <h2>Produtos</h2>
-
-                    <div class="card">
-                        <img src="./images/pexels-josh-sorenson-1714208.jpg" alt="Imagem Exemplo" class="img-fluid">
-                        <div class="card-body">
-                            <h5 class="card-title">Lorem ipsum dolor</h5>
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
-                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1" >ver produto</a>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="./images/pexels-josh-sorenson-1714208.jpg" alt="Imagem Exemplo" class="img-fluid">
-                        <div class="card-body">
-                            <h5 class="card-title">Lorem ipsum dolor</h5>
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
-                            <a class="btn btn-primary" href="#produto-2">ver produto</a>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="./images/pexels-josh-sorenson-1714208.jpg" alt="Imagem Exemplo" class="img-fluid">
-                        <div class="card-body">
-                            <h5 class="card-title">Lorem ipsum dolor</h5>
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
-                            <a class="btn btn-primary" href="#produto-3">ver produto</a>
-                        </div>
-                    </div>
-                    
+                <div class="col text-center">
+                    <h2>Planos ideais para você</h2>
                 </div>
             </div>
-        </div>
 
+            <div class="row align-items-center">
+                <div class="col-md-4 col-sm-12">
+                    <div class="card text-center">
+                        <img src="./images/pexels-josh-sorenson-1714208.jpg" alt="Imagem Exemplo" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Free</h5>
+                            <p class="card-text">Para quem está começando no mundo das finanças e precisa aprender o básico</p>
+                            <a class="btn btn-primary border-0" data-bs-toggle="modal" data-bs-target="#modal-1">Detalhes do plano Free</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12">
+                    <div class="card text-center text-bg-primary border-0">
+                        <div class="card-header">Plano sugerido</div>
+                        <img src="./images/pexels-josh-sorenson-1714208.jpg" alt="Imagem Exemplo" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Premium</h5>
+                            <p class="card-text">Para quem já tem boas noções de finanças e quer aproveitar o máximo da nossa inteligência artificial e sugestões personalizadas.</p>
+                            <a class="btn btn-light border-0" data-bs-toggle="modal" data-bs-target="#modal-2">Detalhes do plano Premium</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12">
+                    <div class="card text-center">
+                        <img src="./images/pexels-josh-sorenson-1714208.jpg" alt="Imagem Exemplo" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Helper</h5>
+                            <p class="card-text">Falta aquele empurrãozinho para fazer seu dinheiro render? Esse é seu plano.</p>
+                            <a class="btn btn-primary border-0" data-bs-toggle="modal" data-bs-target="#modal-3">Detalhes do plano Helper</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
 
 
@@ -91,24 +98,20 @@
             <div class="row">
                 <div class="col-md-6 col-sm-12">
                     <h2>Contato</h2>
-                    <p>Ficou interessado? Preencha os campos do formulário para receber uma cotação.</p>
+                    <p>Ficou interessado? Preencha o formulário para receber nossa newsletter semanal com dicas de finanças.</p>
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <form class="form">
 
                         <div class="input-group">
-                            <input class="form-control" type="text" name="nome" placeholder="digite seu nome">
+                            <input class="form-control" type="text" name="nome" placeholder="Digite seu nome">
                         </div>
 
                         <div class="input-group">
-                            <input class="form-control" type="text" name="email" placeholder="digite seu email">
+                            <input class="form-control" type="text" name="email" placeholder="Digite seu email">
                         </div>
 
-                        <div class="input-group">
-                            <textarea  class="form-control" name="" rows="5"></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-lg btn-success">Solicitar Cotação</button>
+                        <button type="submit" class="btn btn-lg btn-success">Enviar mensagem</button>
 
                     </form>
 
@@ -117,47 +120,103 @@
         </div>
     </section>
 
-
-
-    <div class="modal fade" id="modal-1">
+    <div class="modal fade" id="modal-brand">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Produto 1</h5>
+                    <h5 class="modal-title"></h5>
                     <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                    <h6>Confira o tamanho e os preços</h6>
-                    <table class="table table-hover table-striped">
-                        <thead>
-                            <tr>
-                                <th>Tamanho</th>
-                                <th>Valor</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>P</td>
-                                <td>R$ 100</td>
-                            </tr>
-                            <tr>
-                                <td>M</td>
-                                <td>R$ 200</td>
-                            </tr>
-                            <tr>
-                                <td>G</td>
-                                <td>R$ 300</td>
-                            </tr>
-                        </tbody>
-                    </table>
 
+                <div class="modal-body text-center">
+                    <img src="./images/logo_cores.png" alt="">
+                    <h3>A inteligência artificial que ajuda você a se planejar melhor</h3>
+                    <p>Sabemos que ter total controle das suas finanças é algo que pode mudar sua vida! Aqui na Munee, queremos que você tenha total autonomia sobre o seu dinheiro e que você tenha visibilidade dos gastos, economias e que receba ajuda para alcançar seus objetivos!</p>
                 </div>
+
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Plano Free</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <p>Confira o que você tem acesso com o Plano Free!</p>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-info">Acesso ao Dashboard</li>
+                        <li class="list-group-item list-group-item-warning">Acompanhamento de uma conta bancária</li>
+                    </ul>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                
+                <div class="modal-header">
+                    <h5 class="modal-title">Plano Premium</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <p>Confira o que você tem acesso com o Plano Premium!</p>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-info">Acesso ao Dashboard</li>
+                        <li class="list-group-item list-group-item-warning">Acompanhamento das operações bancárias</li>
+                        <li class="list-group-item list-group-item-danger">Alertas de consumo</li>
+                        <li class="list-group-item list-group-item-success">Acesso a especialistas</li>
+                        <li class="list-group-item list-group-item-secondary">Ajuda com sugestões para conquistar seus objetivos</li>
+                        <li class="list-group-item list-group-item-primary">Controle todas suas contas em um só lugar</li>
+                    </ul>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                
+                <div class="modal-header">
+                    <h5 class="modal-title">Plano Helper</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <p>Confira o que você tem acesso com o Plano Helper!</p>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-info">Acesso ao Dashboard</li>
+                        <li class="list-group-item list-group-item-warning">Acompanhamento das operações bancárias</li>
+                        <li class="list-group-item list-group-item-danger">Alertas de consumo</li>
+                        <li class="list-group-item list-group-item-success">Acesso a especialistas</li>
+                    </ul>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
