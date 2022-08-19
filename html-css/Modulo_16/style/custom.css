@@ -75,3 +75,23 @@ h1, h2, h3, input {
     --bs-btn-disabled-bg: var(--bs-primary);
     --bs-btn-disabled-border-color: var(--bs-primary);
 }
+
+@media (max-width: 760px) {
+    header, section, .card {
+        margin: 1rem 0 1rem 0;
+    }
+
+    div.push-center {
+        text-align: center;
+    }
+
+    .block-mobile,
+    .block-mobile > li {
+        width: 100%;
+        text-align: center;
+    }
+
+    a.block-mobile {
+        margin-bottom: 1rem;
+    }
+}

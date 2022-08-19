@@ -12,11 +12,11 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4 col-sm-12 | push-center">
                     <img src="./images/logo_cores.png" alt="">
                 </div>
-                <div class="col-8">
-                    <ul class="nav justify-content-end">
+                <div class="col-md-8 col-sm-12">
+                    <ul class="nav justify-content-end | block-mobile">
                         <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
                         <li class="nav-item"><a class="nav-link" href="#planos">Planos</a></li>
@@ -36,7 +36,7 @@
                     <p>Queremos que você tenha visibilidade do que acontece com a sua renda. Esteja no controle das movimentações e saiba para onde seu dinheiro está indo.</p>
                     <p>Todo mundo precisa de uma ajuda! Conte com profissionais especialistas para manter tudo sob controle!</p>
                     <p>Atualizações constantes de dados de todo o mercado financeiro para seu perfil e objetivo. O sistema passa a interpretar seus gastos e envia recomendações para elevar sua performance.</p>
-                    <a class="btn btn-lg btn-primary border-0"  data-bs-toggle="modal" data-bs-target="#modal-brand">Conheça a marca</a>
+                    <a class="btn btn-lg btn-primary border-0 | block-mobile"  data-bs-toggle="modal" data-bs-target="#modal-brand">Conheça a marca</a>
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <img src="./images/sobre_side.png" alt="Imagem Exemplo" class="img-fluid">
@@ -66,24 +66,24 @@
                 </div>
 
                 <div class="col-md-4 col-sm-12">
-                    <div class="card text-center text-bg-primary border-0">
+                    <div class="card text-center text-bg-primary">
                         <div class="card-header">Plano sugerido</div>
-                        <img src="./images/premium.png" alt="Imagem Exemplo" class="card-img-top">
+                        <img src="./images/helper.png" alt="Imagem Exemplo" class="card-img-top bg-light border-0">
                         <div class="card-body">
-                            <h5 class="card-title">Premium</h5>
-                            <p class="card-text">Para quem já tem boas noções de finanças e quer aproveitar o máximo da nossa inteligência artificial e sugestões personalizadas.</p>
-                            <a class="btn btn-light border-0" data-bs-toggle="modal" data-bs-target="#modal-2">Detalhes do plano Premium</a>
+                            <h5 class="card-title">Helper</h5>
+                            <p class="card-text">Falta aquele empurrãozinho para fazer seu dinheiro render? Esse é seu plano.</p>
+                            <a class="btn btn-light border-0" data-bs-toggle="modal" data-bs-target="#modal-3">Detalhes do plano Helper</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4 col-sm-12">
                     <div class="card text-center">
-                        <img src="./images/helper.png" alt="Imagem Exemplo" class="card-img-top">
+                        <img src="./images/premium.png" alt="Imagem Exemplo" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">Helper</h5>
-                            <p class="card-text">Falta aquele empurrãozinho para fazer seu dinheiro render? Esse é seu plano.</p>
-                            <a class="btn btn-primary border-0" data-bs-toggle="modal" data-bs-target="#modal-3">Detalhes do plano Helper</a>
+                            <h5 class="card-title">Premium</h5>
+                            <p class="card-text">Para quem já tem boas noções de finanças e quer aproveitar o máximo da nossa inteligência artificial e sugestões personalizadas.</p>
+                            <a class="btn btn-primary border-0" data-bs-toggle="modal" data-bs-target="#modal-2">Detalhes do plano Premium</a>
                         </div>
                     </div>
                 </div>
@@ -108,7 +108,7 @@
                         </div>
 
                         <div class="input-group">
-                            <input class="form-control" type="text" name="email" placeholder="Digite seu email">
+                            <input class="form-control" type="text" name="email" placeholder="Digite seu email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                         </div>
 
                         <button type="submit" class="btn btn-lg btn-success">Enviar mensagem</button>
@@ -129,7 +129,7 @@
                 </div>
 
                 <div class="modal-body text-center">
-                    <img src="./images/logo_cores.png" alt="">
+                    <img src="./images/logo_cores.png" alt="" class="block-mobile">
                     <h3>A inteligência artificial que ajuda você a se planejar melhor</h3>
                     <p>Sabemos que ter total controle das suas finanças é algo que pode mudar sua vida! Aqui na Munee, queremos que você tenha total autonomia sobre o seu dinheiro e que você tenha visibilidade dos gastos, economias e que receba ajuda para alcançar seus objetivos!</p>
                 </div>
