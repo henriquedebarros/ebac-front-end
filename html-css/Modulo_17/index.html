@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./libs/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./libs/fontawesome/css/brands.min.css">
+    <link rel="stylesheet" href="./libs/fontawesome/css/regular.min.css">
+    <link rel="stylesheet" href="./style/custom.css">
+
+    <title>Munee - Versão Bootstrap II</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 | push-center">
+                    <img src="./images/logo_cores.png" alt="">
+                </div>
+                <div class="col-md-8 col-sm-12">
+                    <ul class="nav justify-content-end | block-mobile">
+                        <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#planos">Planos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./cadastro.html">Cadastro</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-inner ratio ratio-21x9">
+                <div class="carousel-item bg-dark active">
+                    <div>
+                        <img src="./images/save-money.jpg" class="d-block w-100 position-absolute bottom-0 opacity-50" alt="...">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block text-light">
+                        <h5>Como economizar em despesas pequenas</h5>
+                        <p class="text-truncate">Saiba como algumas despesas pequenas podem acabar afetando seu orçamento por não passarem grandes individualmente.</p>
+                        <a href="#" class="btn btn-link btn-light">Leia mais...</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item bg-dark">
+                    <div>
+                        <img src="./images/credit-card.jpg" class="d-block w-100 opacity-50" alt="...">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block text-light">
+                        <h5>Como fazer melhor uso do cartão de crédito</h5>
+                        <p class="text-truncate">O cartão de crédito muitas vezes é visto como um terror das finanças, mas existem formas de usá-lo que podem te ajudar a melhorar sua saúde financeira.</p>
+                        <a href="#" class="btn btn-link btn-light">Leia mais...</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item bg-dark">
+                    <div>
+                        <img src="./images/bank-app.jpg" class="d-block w-100 opacity-25" alt="...">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block text-light">
+                        <h5>Como fazer um bom uso do seu aplicativo de banco</h5>
+                        <p class="text-truncate">Muitas vezes aplicativos de banco fornecem os dados de forma confusa e não deixam claro pontos que são importantes ao realizar as operações.</p>
+                        <a href="#" class="btn btn-link btn-light">Leia mais...</a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    
+    <section id="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h2>Sobre nós</h2>
+                    <p>A educação financeira que você precisa, explicada como você entende.</p>
+                    <p>Queremos que você tenha visibilidade do que acontece com a sua renda. Esteja no controle das movimentações e saiba para onde seu dinheiro está indo.</p>
+                    <p>Todo mundo precisa de uma ajuda! Conte com profissionais especialistas para manter tudo sob controle!</p>
+                    <p>Atualizações constantes de dados de todo o mercado financeiro para seu perfil e objetivo. O sistema passa a interpretar seus gastos e envia recomendações para elevar sua performance.</p>
+                    <a class="btn btn-lg btn-primary border-0 | block-mobile"  data-bs-toggle="modal" data-bs-target="#modal-brand">Conheça a marca</a>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <img src="./images/sobre_side.png" alt="Imagem Exemplo" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="planos">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Planos ideais para você</h2>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-md-4 col-sm-12">
+                    <div class="card text-center">
+                        <img src="./images/free.png" alt="Imagem Exemplo" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Free</h5>
+                            <p class="card-text">Para quem está começando no mundo das finanças e precisa aprender o básico</p>
+                            <a class="btn btn-primary border-0" data-bs-toggle="modal" data-bs-target="#modal-1">Detalhes do plano Free</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12">
+                    <div class="card text-center text-bg-primary">
+                        <div class="card-header">Plano sugerido</div>
+                        <img src="./images/helper.png" alt="Imagem Exemplo" class="card-img-top bg-light border-0">
+                        <div class="card-body">
+                            <h5 class="card-title">Helper</h5>
+                            <p class="card-text">Falta aquele empurrãozinho para fazer seu dinheiro render? Esse é seu plano.</p>
+                            <a class="btn btn-light border-0" data-bs-toggle="modal" data-bs-target="#modal-3">Detalhes do plano Helper</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12">
+                    <div class="card text-center">
+                        <img src="./images/premium.png" alt="Imagem Exemplo" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Premium</h5>
+                            <p class="card-text">Para quem já tem boas noções de finanças e quer aproveitar o máximo da nossa inteligência artificial e sugestões personalizadas.</p>
+                            <a class="btn btn-primary border-0" data-bs-toggle="modal" data-bs-target="#modal-2">Detalhes do plano Premium</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contato">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h2>Contato</h2>
+                    <p>Ficou interessado? Preencha o formulário para receber nossa newsletter semanal com dicas de finanças.</p>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <form class="form">
+
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="nome" placeholder="Digite seu nome">
+                        </div>
+
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="email" placeholder="Digite seu email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-lg btn-success">Enviar mensagem</button>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="modal-brand">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body text-center">
+                    <img src="./images/logo_cores.png" alt="" class="block-mobile">
+                    <h3>A inteligência artificial que ajuda você a se planejar melhor</h3>
+                    <p>Sabemos que ter total controle das suas finanças é algo que pode mudar sua vida! Aqui na Munee, queremos que você tenha total autonomia sobre o seu dinheiro e que você tenha visibilidade dos gastos, economias e que receba ajuda para alcançar seus objetivos!</p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Plano Free</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <p>Confira o que você tem acesso com o Plano Free!</p>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-info">Acesso ao Dashboard</li>
+                        <li class="list-group-item list-group-item-warning">Acompanhamento de uma conta bancária</li>
+                    </ul>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                
+                <div class="modal-header">
+                    <h5 class="modal-title">Plano Premium</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <p>Confira o que você tem acesso com o Plano Premium!</p>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-info">Acesso ao Dashboard</li>
+                        <li class="list-group-item list-group-item-warning">Acompanhamento das operações bancárias</li>
+                        <li class="list-group-item list-group-item-danger">Alertas de consumo</li>
+                        <li class="list-group-item list-group-item-success">Acesso a especialistas</li>
+                        <li class="list-group-item list-group-item-secondary">Ajuda com sugestões para conquistar seus objetivos</li>
+                        <li class="list-group-item list-group-item-primary">Controle todas suas contas em um só lugar</li>
+                    </ul>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                
+                <div class="modal-header">
+                    <h5 class="modal-title">Plano Helper</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <p>Confira o que você tem acesso com o Plano Helper!</p>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-info">Acesso ao Dashboard</li>
+                        <li class="list-group-item list-group-item-warning">Acompanhamento das operações bancárias</li>
+                        <li class="list-group-item list-group-item-danger">Alertas de consumo</li>
+                        <li class="list-group-item list-group-item-success">Acesso a especialistas</li>
+                    </ul>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/e52905c8fb.js" crossorigin="anonymous"></script>
+    <script>
+        var myCarousel = document.querySelector('#carouselExampleFade')
+        var carousel = new bootstrap.Carousel(myCarousel, {
+            pause: false,
+            interval: 5000
+        })
+    </script>
+</body>
+</html>

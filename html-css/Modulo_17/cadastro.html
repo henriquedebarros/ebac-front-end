@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/custom.css">
+    <link rel="stylesheet" href="./style/custom-form.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 | push-center">
+                    <img src="./images/logo_cores.png" alt="">
+                </div>
+                <div class="col-md-8 col-sm-12">
+                    <ul class="nav justify-content-end | block-mobile">
+                        <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#planos">Planos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./cadastro.html">Cadastro</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="cadastro">
+        <div class="container">
+
+            <div class="row">
+                <div class="col">
+                    <h2>Cadastro</h2>
+                    <p>Faça seu cadastro para receber nosso guia financeiro em sua casa!</p>
+                </div>
+            </div>
+
+            <form class="form">
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="input-group">
+                            <label for="nome" class="visually-hidden">Inserir nome completo</label>
+                            <input type="text" name="nome" id="nome" placeholder="Nome completo" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12">
+                        <div class="input-group">
+                            <label for="nome" class="visually-hidden">Inserir e-mail</label>
+                            <input type="email" name="email" id="email" placeholder="Digite seu email" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-sm-12">
+                        <label for="endereco" class="col-form-label col-form-label-sm">Endereço</label>
+                        <input type="text" id="endereco" class="form-control" placeholder="Rua e número" required>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12">
+                        <label for="endereco" class="col-form-label col-form-label-sm">Complemento</label>
+                        <input type="text" id="endereco" class="form-control" placeholder="Apto, Lote">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-5 col-sm-12">
+                        <label for="cidade" class="col-form-label col-form-label-sm">Cidade</label>
+                        <input type="text" name="cidade" id="cidade" class="form-control">
+                    </div>
+
+                    <div class="col-md-3 col-sm-12">
+                        <label for="estado" class="col-form-label col-form-label-sm">Estado</label>
+                        <select name="estado" id="estado" class="form-control">
+                            <option value="" selected="selected" disabled>Selecione</option>
+                            <optgroup label="Norte">
+                                <option value="AC">Acre</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="PA">Pará</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="TO">Tocantins</option>
+                            </optgroup>
+                            <optgroup label="Nordeste">
+                                <option value="AL">Alagoas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="SE">Sergipe</option>
+                            </optgroup>
+                            <optgroup label="Centro-Oeste">
+                                <option value="DF">Distrito Federal</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                            </optgroup>
+                            <optgroup label="Sudeste">
+                                <option value="ES">Espírito Santo</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="SP">São Paulo</option>
+                            </optgroup>
+                            <optgroup label="Sul">
+                                <option value="PR">Paraná</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="SC">Santa Catarina</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="col">
+                        <label for="cep" class="col-form-label col-form-label-sm">CEP</label>
+                        <input type="text" name="cep" id="cep" placeholder="04522-880" class="form-control" pattern="/^[0-9]{5}-[0-9]{3}$/" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="input-group">
+                            <label for="info" class="col-form-label col-form-label-sm">Qual sua maior dificuldade nesse momento em respeito às finanças?</label>
+                            <textarea class="form-control" name="informacoes" id="info" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="form-check">
+                            <input type="checkbox" name="promocionais" id="promocionais" class="form-check-input">
+                            <label for="promocionais" class="form-check-label col-form-label-sm">Aceito receber mensagens promocionais</label>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-lg btn-success">Realizar cadastro</button>
+
+            </form>
+        </div> <!-- end .container -->
+    </section>
+
+    <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
