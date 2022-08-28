@@ -73,6 +73,7 @@ h1, h2, h3, input {
 
 textarea.form-control {
     width: 100% !important;
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 760px) {
@@ -91,6 +92,9 @@ textarea.form-control {
     }
 
     a.block-mobile {
+        margin-bottom: 1rem;
+    }
+    #estado {
         margin-bottom: 1rem;
     }
 }
