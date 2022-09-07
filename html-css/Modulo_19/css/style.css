@@ -508,7 +508,7 @@ a {
 	#navbarResponsive {
 	    z-index: 99999;
 	    position: absolute;
-	    top: 150px;
+	    top: 160px;
 	    width: 100%;
 	    text-align: center;
 	    background-color: rgba(250,250,250,0.95);

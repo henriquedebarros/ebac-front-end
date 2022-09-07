@@ -14,6 +14,13 @@ $(document).ready(function(){
         dynamicModal.show();
     });
 
+    $(".featured-item a").on("click", function(e) {
+        e.preventDefault();
+
+        let produto = $(this).parent().find("h4").text();
+        window.alert(produto + " esgotado");
+    });
+
     function checkFilling(input){
         if (input.val() == '' || input.val().length < 2) {
             input.parent().find('.text-muted').show();

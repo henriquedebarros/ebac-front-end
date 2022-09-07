@@ -195,7 +195,7 @@
 		pullDrag: true,
 		freeDrag: false,
 
-		margin: 0,
+		margin: 12,
 		stagePadding: 0,
 
 		merge: false,
@@ -209,7 +209,21 @@
 		fluidSpeed: false,
 		dragEndSpeed: false,
 
-		responsive: {},
+		responsive: {
+			0:{
+				items:1,
+				nav:true
+			},
+			600:{
+				items:3,
+				nav:false
+			},
+			1000:{
+				items:3,
+				nav:true,
+				loop:false
+			}
+		},
 		responsiveRefreshRate: 200,
 		responsiveBaseElement: window,
 
