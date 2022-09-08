@@ -1,4 +1,5 @@
 const {series}  = require("gulp");
+const {parallel}  = require("gulp");
 const gulp  = require("gulp");
 const concat = require("gulp-concat");
 const cssmin = require("gulp-cssmin");
@@ -6,6 +7,9 @@ const rename = require("gulp-rename");
 const uglify = require("gulp-uglify");
 const image = require("gulp-image");
 const htmlmin = require("gulp-htmlmin");
+const babel = require("gulp-babel");
+const browserSync = require("browser-sync").create();
+const reload = browserSync.reload;
 
 function tarefasCSS(callback) {
     gulp.src([
@@ -32,6 +36,10 @@ function tarefasJS(callback) {
             './vendor/owl/js/owl.js',
             './src/js/custom.js'
         ])
+        .pipe(babel({
+            comments: true,
+            presets: ['@babel/env']
+        }))
         .pipe(concat("libs.js"))
         .pipe(uglify())
         .pipe(rename({suffix: ".min"}))
@@ -64,8 +72,22 @@ function tarefasHTML(callback) {
     return callback()
 }
 
+gulp.task("server", function() {
+    browserSync.init({
+        server: {
+            baseDir: "./dist"
+        }
+    })
+    gulp.watch("./src/**/*").on("change", processo)
+    gulp.watch("./src/**/*").on("change", reload)
+})
+
 exports.estilos = tarefasCSS;
 exports.scripts = tarefasJS;
 exports.imagens = tarefasImagem;
 
-exports.default = series(tarefasHTML, tarefasJS, tarefasCSS);
+const processo = series(tarefasHTML, tarefasJS, tarefasCSS);
+
+exports.total = parallel(tarefasHTML, tarefasJS, tarefasCSS, tarefasImagem);
+
+exports.default = processo;
