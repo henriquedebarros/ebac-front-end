@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/css/libs.min.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Exercício Gulp</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+            <a class="navbar-brand" href="#"><img src="assets/images/header-logo.webp" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> 
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#destaques">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link nav-modal-open" rel="sobre" href="#">Sobre nós</a></li>
+                    <li class="nav-item"><a class="nav-link nav-modal-open" rel="contato" href="#">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="caption">
+                        <h2>Café em Grão Torrado</h2>
+                        <div class="line-dec"></div>
+                        <p>Descubra uma vasta gama de café em grão torrado para o seu negócio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="destaques" class="featured-items">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <div class="line-dec"></div>
+                        <h1>Destaques</h1>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="owl-carousel owl-theme">
+                        <div class="featured-item">
+                            <img src="assets/images/item-01.png" alt="Item 1">
+                            <h4>Café Sublime</h4>
+                            <h6>€ 5,00</h6>
+                            <a href="#">Comprar</a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="assets/images/item-02.png" alt="Item 2">
+                            <h4>Café Ethiopia</h4>
+                            <h6>€ 4,20</h6>
+                            <a href="#">Comprar</a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="assets/images/item-03.png" alt="Item 3">
+                            <h4>Café Super Bar</h4>
+                            <h6>€ 4,00</h6>
+                            <a href="#">Comprar</a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="assets/images/item-04.png" alt="Item 4">
+                            <h4>Café descafeinado</h4>
+                            <h6>€ 3,00</h6>
+                            <a href="#">Comprar</a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="assets/images/item-05.png" alt="Item 5">
+                            <h4>Café Prestige</h4>
+                            <h6>€ 5,75</h6>
+                            <a href="#">Comprar</a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="assets/images/item-06.png" alt="Item 6">
+                            <h4>Café Premium</h4>
+                            <h6>€ 6,50</h6>
+                            <a href="#">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="logo">
+                        <img src="assets/images/header-logo.webp" alt="">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="sub-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright-text">
+                    <p>SICAL &copy; Todos os direitos reservados
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contato" class="visually-hidden">
+        <form action="" id="formulario" class="form">
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome completo</label>
+              <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome" aria-describedby="helpNome">
+              <small id="helpNome" class="text-muted">Digite um nome válido</small>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu e-mail" aria-describedby="helpEmail">
+                <small id="helpEmail" class="text-muted">Digite um e-mail válido</small>
+            </div>
+
+            <div class="mb-3">
+                <label for="date" class="form-label">Data de nascimento</label>
+                <input type="date" name="date" id="date" class="form-control" aria-describedby="helpDate">
+                <small id="helpDate" class="text-muted">Digite uma data válida</small>
+            </div>
+
+            <div class="mb-3">
+                <label for="cep" class="form-label">CEP</label>
+                <input type="text" name="cep" id="cep" class="form-control" placeholder="No formato 04410-554" aria-describedby="helpCEP">
+                <small id="helpCEP" class="text-muted">Digite um CEP válido</small>
+            </div>
+
+            <div class="mb-3">
+                <label for="phone" class="form-label">Celular</label>
+                <input type="text" name="phone" id="phone" class="form-control" placeholder="No formato 94422-5555" aria-describedby="helpCelular">
+                <small id="helpCelular" class="text-muted">Digite um celular válido</small>
+            </div>
+
+            <div class="mb-3">
+                <label for="cpf" class="form-label">CPF</label>
+                <input type="text" name="cpf" id="cpf" class="form-control" placeholder="No formato 348.558.669-88" aria-describedby="helpCPF">
+                <small id="helpCPF" class="text-muted">Digite um CPF válido</small>
+            </div>
+
+            <button id="btnEnviar" type="submit" class="btn btn-primary">Enviar</button>
+
+        </form>
+    </div>
+
+    <div id="sobre" class="visually-hidden">
+        <p>A SICAL é uma marca portuguesa de café. Foi fundada no Porto em 1947 por Vicente Peres sobre o nome de SICAL - Sociedade Importadora de Cafés, Limitada. Foi a primeira marca portuguesa de cafés a fazer publicidade, em 1956, tendo apostado desde então na divulgação da marca através de campanhas publicitárias.</p>
+        <img src="https://cafestorrados.nestle.pt/sical/sites/sical/files/2022-04/Tradicao-Landing-Page-75Years.png" alt="" class="img-fluid h-50 m-5">
+        <p>O sabor de SICAL está para lá do que se sente quando uma chávena nos chega à mão. SICAL sabe a uma tradição portuguesa que já conta com 75 Anos de juventude, e cada ano que passa torna os aromas mais vivos e os nossos sentidos mais despertos para a realidade do sabor de todos os dias que é este mágico elixir.</p>
+    </div>
+   
+    <!-- Modal -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./dist/js/libs.min.js"></script>
+    <script src="./src/js/custom.js"></script>
+
+</body>
+</html>
