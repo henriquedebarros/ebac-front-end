@@ -6,7 +6,13 @@ const uglify = require("gulp-uglify");
 const image = require("gulp-image");
 
 function tarefasCSS() {
-    return gulp.src("./vendor/**/*.css")
+    return gulp.src([
+            "./node_modules/bootstrap/dist/css/bootstrap.css",
+            "./node_modules/@fortawesome/fontawesome-free/css/fontawesome.css",
+            "./node_modules/@fortawesome/fontawesome-free/css/brands.css",
+            "./vendor/owl/css/owl.css",
+            "./src/css/style.css"
+        ])
         .pipe(concat("libs.css"))
         .pipe(cssmin())
         .pipe(rename({suffix: ".min"}))
@@ -14,7 +20,14 @@ function tarefasCSS() {
 }
 
 function tarefasJS() {
-    return gulp.src("./vendor/**/*.js")
+    return gulp.src([
+            './node_modules/jquery/dist/jquery.js',
+            './node_modules/bootstrap/dist/js/bootstrap.js',
+            "./node_modules/@fortawesome/fontawesome-free/js/fontawesome.js",
+            "./node_modules/@fortawesome/fontawesome-free/js/brands.js",
+            './vendor/owl/js/owl.js',
+            './src/js/custom.js'
+        ])
         .pipe(concat("libs.js"))
         .pipe(uglify())
         .pipe(rename({suffix: ".min"}))
