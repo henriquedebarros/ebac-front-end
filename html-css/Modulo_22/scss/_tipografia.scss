@@ -1,0 +1,29 @@
+body {
+    background-color: $bg-light;
+    color: $text-dark;
+    font: $font-style-body;
+    font-size: $font-normal;
+    text-align: $t-align-l;
+}
+
+h1, h2, h3 {
+    font: $font-style-title;
+}
+
+h1 {
+    font-size: $font-medium;
+}
+
+h2 {
+    font-size: $font-big;
+}
+
+h3 {
+    font-size: $font-normal;
+}
+
+footer {
+    p {
+        font-size: $font-small;
+    }
+}

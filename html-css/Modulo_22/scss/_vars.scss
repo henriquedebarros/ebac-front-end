@@ -1,16 +1,30 @@
-$align: left;
-$bg-color: #ddd;
-$color-01: #ff5;
-$color-02: #999;
-$color-03: #f00;
-$color-04: #222;
-$color-default: #444;
-$font-big: 3rem; 
-$font-family-default: Arial, Helvetica, sans-serif;
-$font-medium: 2.2rem;
-$font-normal: 1.5rem;
-$font-small: 1.2rem;
-$mb: 1.5rem;
-$mt: 1.5rem;
-$mt-02: 3rem;
-$space-default: 1.5rem;
+// Cores
+$color-p: #f50437;
+$color-b: #000000;
+$color-w: #ffffff;
+
+$bg-light: #f2f2f2;
+$bg-dark: #1a1a1a;
+
+$text-light: #f2f2f2;
+$text-dark: #333333;
+
+// Tipografia
+$font-style-title: normal small-caps bold 1rem/2 Verdana, Geneva, sans-serif;
+$font-style-body: normal normal normal 1rem/1.6 Verdana, Geneva, sans-serif;
+
+$font-big: 2.5rem;
+$font-medium: 1.5rem;
+$font-normal: 1rem;
+$font-small: .75rem;
+
+$t-align-l: left;
+$t-align-c: center;
+$t-align-r: right;
+
+// Espaçamento
+
+$space-050: .5rem;
+$space-100: 1rem;
+$space-200: 2rem;
+$space-300: 3rem;
