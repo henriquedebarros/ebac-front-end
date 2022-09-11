@@ -8,7 +8,7 @@ const uglify = require("gulp-uglify");
 const image = require("gulp-image");
 const htmlmin = require("gulp-htmlmin");
 const babel = require("gulp-babel");
-const sass = require("gulp-sass")(require("node-sass"));
+const sass = require("gulp-sass")(require("sass"));
 const browserSync = require("browser-sync").create();
 const reload = browserSync.reload;
 
