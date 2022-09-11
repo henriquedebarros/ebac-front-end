@@ -8,6 +8,7 @@ const uglify = require("gulp-uglify");
 const image = require("gulp-image");
 const htmlmin = require("gulp-htmlmin");
 const babel = require("gulp-babel");
+const sass = require("gulp-sass")(require("node-sass"));
 const browserSync = require("browser-sync").create();
 const reload = browserSync.reload;
 
@@ -16,8 +17,7 @@ function tarefasCSS(callback) {
             "./node_modules/bootstrap/dist/css/bootstrap.css",
             "./node_modules/@fortawesome/fontawesome-free/css/fontawesome.css",
             "./node_modules/@fortawesome/fontawesome-free/css/brands.css",
-            "./vendor/owl/css/owl.css",
-            "./src/css/style.css"
+            "./vendor/owl/css/owl.css"
         ])
         .pipe(concat("libs.css"))
         .pipe(cssmin())
@@ -72,6 +72,14 @@ function tarefasHTML(callback) {
     return callback()
 }
 
+function tarefasSass(callback) {
+    gulp.src("./src/scss/**/*.scss")
+        .pipe(sass())
+        .pipe(gulp.dest("./dist/css"))
+
+    return callback()
+}
+
 gulp.task("server", function() {
     browserSync.init({
         server: {
@@ -85,8 +93,9 @@ gulp.task("server", function() {
 exports.estilos = tarefasCSS;
 exports.scripts = tarefasJS;
 exports.imagens = tarefasImagem;
+exports.sass = tarefasSass;
 
-const processo = series(tarefasHTML, tarefasJS, tarefasCSS, tarefasImagem);
+const processo = series(tarefasHTML, tarefasJS, tarefasCSS, tarefasSass);
 
 exports.total = parallel(tarefasHTML, tarefasJS, tarefasCSS, tarefasImagem);
 
