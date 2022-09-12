@@ -1,0 +1,24 @@
+.featured {
+    background-color: $bg-dark;
+
+    h2 {
+        margin-left: $space-100;
+        color: $text-light;
+    }
+
+    h3 {
+        margin-left: $space-200;
+        color: $text-light;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        margin: $space-050 0;
+    }
+    p {
+        font-size: $font-normal;
+        color: $text-light;
+        max-width: 80ch;
+        padding: $space-200 $space-100;
+    }
+}
