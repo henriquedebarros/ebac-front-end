@@ -5,39 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Módulo Sass</title>
+    <title>AUDI - Módulo Sass III</title>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Apresentação novo Audi A5</h1>
+            <img src="https://www.audi.com/etc/designs/ciportal/svg/audi-logo.svg" class="logo" alt="">
+            <a class="button button--primary">Encontre uma loja</a>
+            <ul role="list" class="primary-nav">
+                <li class="primary-nav__item">
+                    <a class="primary-nav__link primary-nav__link--active" href="#" aria-current="page">Home</a>
+                </li>
+                <li class="primary-nav__item">
+                    <a class="primary-nav__link" href="#">Especificações</a>
+                </li>
+                <li class="primary-nav__item">
+                    <a class="primary-nav__link" href="#">Catálogo</a>
+                </li>
+            </ul>
         </div>
     </header>
+
     <section>
         <div class="featured">
             <div class="container">
-                <h2>Audi A5</h2>
-                <h3>Destaque</h3>
-                <img src="./images/pexels-mike-244206.jpg" alt="Foto Audi por Mike em Pexels">
-                <p>Com o Audi A5 Sportback, destaca-se dos demais. O seu novo conceito estilístico na parte dianteira, nos renovados perfil lateral e seção traseira enfatizando ainda mais a largura e o comprimento do modelo de 5 portas. Além disso, oferece tecnologia de vanguarda, como os faróis Audi Matrix LED opcionais e um sistema completo de infotainment e lazer.</p>
+                <h1>Audi A5</h1>
+                <h3>Destaques</h3>
+                <div class="mosaico">
+                    <div class="mosaico__big"></div>
+                    <div class="mosaico__coluna">
+                        <div class="mosaico__small mosaico__small--1"></div>
+                        <div class="mosaico__small mosaico__small--2"></div>
+                        <div class="mosaico__small mosaico__small--3"></div>
+                    </div>
+                </div>
+                <div class="blocks">
+                    <p>Mais um grande lançamento da Audi</p>
+                    <h2></h2>
+                    <p>Com o Audi A5 Sportback, destaca-se dos demais. O seu novo conceito estilístico na parte dianteira, nos renovados perfil lateral e seção traseira enfatizando ainda mais a largura e o comprimento do modelo de 5 portas. Além disso, oferece tecnologia de vanguarda, como os faróis Audi Matrix LED opcionais e um sistema completo de infotainment e lazer.</p>
+                </div>
             </div>
         </div>
 
-        <div class="container">
-            <div class="blocks cars">
+        <div class="blocks">
+            <div class="container">
                 <h3>Detalhes do modelo</h3>
                 <ul>
                     <li>
-                        <div class="img-container"><img src="./images/pexels-mike-431950.jpg" alt="Foto Mike em Pexels"></div>
-                        <a href="#01">Ver painel</a>
+                        <div class="img-container--1"></div>
+                        <a href="#" class="button button--secondary">Ver painel</a>
                     </li>
                     <li>
                         <div class="img-container"><img src="./images/pexels-pixabay-248747.jpg" alt="Foto Pixabay Pixels"></div>
-                        <a href="#02">Ver motor</a>
+                        <a href="#" class="button button--secondary">Ver motor</a>
                     </li>
                     <li>
                         <div class="img-container"><img src="./images/pexels-torsten-dettlaff-70912.jpg" alt="Foto Pexels Torsten"></div> 
-                        <a href="#03"> Ver lanternas</a>
+                        <a href="#" class="button button--secondary">Ver lanternas</a>
                     </li>
                 </ul>
             </div>

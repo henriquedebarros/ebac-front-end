@@ -1,16 +1,17 @@
 // Cores
-$color-p: #f50437;
-$color-b: #000000;
-$color-w: #ffffff;
+$brand-red: #f50537;
+$brand-black: #000000;
+$brand-white: #ffffff;
 
-$bg-light: #f2f2f2;
-$bg-dark: #1a1a1a;
+$bg-dark-0: #000000; 
+$bg-dark-1: #1A1A1A;
+$bg-dark-2: #262626;
 
-$text-light: #f2f2f2;
-$text-dark: #333333;
+$text-light-def: #ffffff;
+$text-light-fade: #B3B3B3;
 
 // Tipografia
-$font-style-title: normal small-caps bold 1rem/2 Verdana, Geneva, sans-serif;
+$font-style-title: normal normal bold 1rem/2 Verdana, Geneva, sans-serif;
 $font-style-body: normal normal normal 1rem/1.6 Verdana, Geneva, sans-serif;
 
 $font-big: 2.5rem;

@@ -1,53 +1,147 @@
 body {
-    background-color: $color-w;
-    position: relative;
-    isolation: isolate;
-}
-
-body::after {
-    content: "";
-    position: absolute;
-    display: block;
-    background-image: url("../images/pexels-mike-244206.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    opacity: 0.2;
-    filter: blur(10px) grayscale(0.5);
-    inset: 0;
-    z-index: -1;
+    background-color: $bg-dark-0;
 }
 
 header,
 footer {
-    background-color: $bg-dark;
+    width: 100%;
+    background-color: $bg-dark-0;
 }
 
 header {
-    background-color: $color-p;
+    .container {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-    h1 {
-        text-align: $t-align-r;
-        color: $text-dark;
-        padding: 0 $space-100;
-        font-size: $font-normal;
+    .logo {
+        width: 8%;
+        margin: $space-100 0;
+    }
+
+    .button {
+        margin: 0 $space-200 0 auto;
+    }
+
+    .primary-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $space-200;
+    }
+
+    .primary-nav__link {
+        text-decoration: none;
+        color: $text-light-fade;
+        text-underline-offset: .5em;
+
+        &--active {
+            color: $text-light-def;
+            text-decoration: underline;
+        }
+
+        &:hover {
+            color: $text-light-def;
+        }
     }
 }
 
 footer {
     p {
         text-align: $t-align-c;
-        color: $color-w;
+        color: $text-light-fade;
         padding: $space-100;
     }
 }
 
-.blocks {
+.featured {
+    background-color: $bg-dark-2;
 
+    h1 {
+        margin-left: $space-100;
+        color: $text-light-def;
+    }
+
+    h2 {
+        margin-left: $space-200;
+        color: $text-light-def;
+    }
+
+    p {
+        font-size: $font-normal;
+        color: $text-light-def;
+        max-width: 80ch;
+        padding: $space-200 $space-100;
+    }
+}
+
+.mosaico {
+    display: flex;
+    flex-direction: row;
+    gap: $space-100;
+
+    @media (max-width: 550px) {
+        flex-direction: column;
+        height: auto;
+    }
+
+    &__coluna {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        gap: $space-100;
+
+        @media (max-width: 550px) {
+            flex-direction: row;
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    &__big {
+        background-image: url("../images/pexels-mike-244206.jpg");
+        display: block;
+        width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+
+        @media (max-width: 550px) {
+            height: 30vh;
+        }
+    }
+    
+    &__small {
+        background-image: url("../images/pexels-mike-244206.jpg");
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+
+        &--1 {
+            background-position: bottom 10% center;
+        }
+        
+        &--2 {
+            background-position: bottom 30% right 40%;
+        }
+        
+        &--3 {
+            background-position: bottom 55% right 70%;
+        }
+    }
+    
+}
+
+
+.blocks {
+    background-color: $bg-dark-1;
     padding: $space-200 $space-100;
 
     h2 {
-        color: $color-p;
+        color: $text-light-def;
     }
 
     ul {
@@ -60,7 +154,7 @@ footer {
     }
 
     li {
-        color: $color-w;
+        color: $text-light-def;
         display: block;
         margin: $space-100 auto;
         width: 32%;
@@ -71,21 +165,7 @@ footer {
             width: 100%;
             aspect-ratio: 2 / 1;
         }
-
-        a {
-            display: block;
-            background-color: $color-p;
-            color: $color-w;
-            font: $font-style-title;
-            font-size: $font-small;
-            text-align: $t-align-c;
-            text-decoration: none;
-            border-radius: 5px;
-            margin: $space-100 auto $space-200;
-            padding: $space-050 0;
-        }
     }
-
 }
 
 @media (max-width: 500px) {

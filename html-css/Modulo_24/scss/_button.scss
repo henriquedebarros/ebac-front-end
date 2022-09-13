@@ -1,0 +1,19 @@
+.button {
+    display: block;
+    padding: 0.5rem 1.5rem;
+    font: $font-style-title;
+    font-size: $font-small;
+    text-align: $t-align-c;
+    text-decoration: none;
+
+    &--primary {
+        background-color: $brand-red;
+        color: $text-light-def;
+    }
+
+    &--secondary {
+        background-color: transparent;
+        border: 1px solid $text-light-def;
+        color: $text-light-def;
+    }
+}
