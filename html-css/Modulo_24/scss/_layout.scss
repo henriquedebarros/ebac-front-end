@@ -1,5 +1,5 @@
 body {
-    background-color: $bg-dark-0;
+    background-color: $bg-dark-1;
 }
 
 header,
@@ -8,12 +8,34 @@ footer {
     background-color: $bg-dark-0;
 }
 
+@media (max-width: 1200px) {
+    .container {
+        padding-inline: $space-100;
+    }
+}
+
 header {
     .container {
         display: flex;
         flex-flow: row;
         justify-content: space-between;
         align-items: center;
+
+        @media (max-width: 750px) {
+            flex-direction: column;
+            padding: 0;
+            padding-bottom: $space-100;
+            text-align: center;
+            gap: $space-050;
+
+            & > * {
+                width: 100%;
+            }
+
+            & > * > * {
+                width: 100%;
+            }
+        }
     }
 
     .logo {
@@ -22,13 +44,17 @@ header {
     }
 
     .button {
-        margin: 0 $space-200 0 auto;
+        margin: 0 $space-300 0 auto;
     }
 
     .primary-nav {
         display: flex;
         flex-wrap: wrap;
         gap: $space-200;
+
+        @media (max-width: 750px) {
+            gap: $space-100;
+        }
     }
 
     .primary-nav__link {
@@ -57,22 +83,11 @@ footer {
 
 .featured {
     background-color: $bg-dark-2;
-
-    h1 {
-        margin-left: $space-100;
-        color: $text-light-def;
-    }
-
-    h2 {
-        margin-left: $space-200;
-        color: $text-light-def;
-    }
+    padding-bottom: $space-200;
 
     p {
-        font-size: $font-normal;
-        color: $text-light-def;
         max-width: 80ch;
-        padding: $space-200 $space-100;
+
     }
 }
 
@@ -80,8 +95,9 @@ footer {
     display: flex;
     flex-direction: row;
     gap: $space-100;
+    margin-bottom: $space-200;
 
-    @media (max-width: 550px) {
+    @media (max-width: 600px) {
         flex-direction: column;
         height: auto;
     }
@@ -92,7 +108,7 @@ footer {
         flex-direction: column;
         gap: $space-100;
 
-        @media (max-width: 550px) {
+        @media (max-width: 600px) {
             flex-direction: row;
             width: 100%;
             height: auto;
@@ -107,8 +123,10 @@ footer {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom center;
+        border-bottom: 1px solid $brand-red;
+        filter: grayscale(0.4);
 
-        @media (max-width: 550px) {
+        @media (max-width: 600px) {
             height: 30vh;
         }
     }
@@ -119,6 +137,8 @@ footer {
         width: 100%;
         height: auto;
         aspect-ratio: 1 / 1;
+        border-bottom: 1px solid $brand-red;
+        filter: grayscale(0.4);
 
         &--1 {
             background-position: bottom 10% center;
@@ -137,48 +157,47 @@ footer {
 
 
 .blocks {
-    background-color: $bg-dark-1;
-    padding: $space-200 $space-100;
+    display: flex;
+    flex-direction: row;
+    gap: $space-100;
+    align-items: flex-start;
 
-    h2 {
-        color: $text-light-def;
+    @media (max-width: 750px) {
+        flex-direction: column;
+        height: auto;
     }
 
-    ul {
-        list-style-type: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        height: 250px;
+    &--textos {
+        gap: $space-300;
+
+        @media (max-width: 750px) {
+            gap: $space-050
+        }
+    }
+
+    &--details {
+        background-color: $bg-dark-1;
         width: 100%;
     }
 
-    li {
-        color: $text-light-def;
-        display: block;
-        margin: $space-100 auto;
-        width: 32%;
-        
-        .img-container {
-            display: block;
-            overflow: hidden;
-            width: 100%;
-            aspect-ratio: 2 / 1;
-        }
+    &__item {
+        flex-shrink: 1;
+        overflow: hidden;
+        width: 100%;
+        margin-bottom: $space-200;
+    }
+
+    &__image img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 2 / 1;
     }
 }
 
-@media (max-width: 500px) {
-    .blocks {
-        ul {
-            flex-direction: column;
-            height: auto;
-
-            li{
-                width: 100%;
-                flex-flow: column;
-            }
-        }
-    }
-    
+.linha {
+    display: block;
+    width: 40%;
+    height: 1px;
+    background-color: $text-light-fade;
+    margin: $space-100 0;
 }

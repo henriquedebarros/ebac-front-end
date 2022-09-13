@@ -11,11 +11,27 @@ $text-light-def: #ffffff;
 $text-light-fade: #B3B3B3;
 
 // Tipografia
-$font-style-title: normal normal bold 1rem/2 Verdana, Geneva, sans-serif;
-$font-style-body: normal normal normal 1rem/1.6 Verdana, Geneva, sans-serif;
+@font-face {
+    font-family: "AudiType-Bold";
+    src: url("../fonts/AudiType-Bold_4.03.woff2") format("woff2"),
+         url("../fonts/AudiType-Bold_4.03.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "AudiType-Normal";
+    src: url("../fonts/AudiType-Normal_4.03.woff2") format("woff2"),
+         url("../fonts/AudiType-Normal_4.03.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font-style-title: "AudiType-Bold", Verdana, sans-serif;
+$font-style-body: "AudiType-Normal", Verdana, sans-serif;
 
 $font-big: 2.5rem;
-$font-medium: 1.5rem;
+$font-medium: 1.25rem;
 $font-normal: 1rem;
 $font-small: .75rem;
 
