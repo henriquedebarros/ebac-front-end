@@ -160,7 +160,7 @@ footer {
     display: flex;
     flex-direction: row;
     gap: $space-100;
-    align-items: flex-start;
+    align-items: center;
 
     @media (max-width: 750px) {
         flex-direction: column;
@@ -169,6 +169,7 @@ footer {
 
     &--textos {
         gap: $space-300;
+        align-items: center;
 
         @media (max-width: 750px) {
             gap: $space-050
