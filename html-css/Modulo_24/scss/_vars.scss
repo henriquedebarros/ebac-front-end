@@ -1,0 +1,47 @@
+// Cores
+$brand-red: #f50537;
+$brand-black: #000000;
+$brand-white: #ffffff;
+
+$bg-dark-0: #000000; 
+$bg-dark-1: #1A1A1A;
+$bg-dark-2: #262626;
+
+$text-light-def: #ffffff;
+$text-light-fade: #B3B3B3;
+
+// Tipografia
+@font-face {
+    font-family: "AudiType-Bold";
+    src: url("../fonts/AudiType-Bold_4.03.woff2") format("woff2"),
+         url("../fonts/AudiType-Bold_4.03.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "AudiType-Normal";
+    src: url("../fonts/AudiType-Normal_4.03.woff2") format("woff2"),
+         url("../fonts/AudiType-Normal_4.03.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font-style-title: "AudiType-Bold", Verdana, sans-serif;
+$font-style-body: "AudiType-Normal", Verdana, sans-serif;
+
+$font-big: 2.5rem;
+$font-medium: 1.25rem;
+$font-normal: 1rem;
+$font-small: .75rem;
+
+$t-align-l: left;
+$t-align-c: center;
+$t-align-r: right;
+
+// Espaçamento
+
+$space-050: .5rem;
+$space-100: 1rem;
+$space-200: 2rem;
+$space-300: 3rem;

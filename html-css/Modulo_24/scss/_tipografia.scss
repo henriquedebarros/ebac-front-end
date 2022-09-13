@@ -1,0 +1,30 @@
+body {
+    color: $text-light-def;
+    font-family: $font-style-body;
+    font-feature-settings: "kern" 1 ,"liga" 1, "calt" 1, "locl" 1;
+    line-height: 1.6;
+    text-align: $t-align-l;
+}
+
+h1, h2, h3 {
+    font-family: $font-style-title;
+    font-feature-settings: "kern" 1 ,"liga" 1, "calt" 1, "locl" 1;
+    line-height: 1.3;
+    padding: $space-100 0;
+}
+
+h1 {
+    font-size: $font-normal;
+    color: $brand-red;
+}
+
+h2 {
+    font-size: $font-medium;
+    color: $brand-red;
+}
+
+footer {
+    p {
+        font-size: $font-small;
+    }
+}
