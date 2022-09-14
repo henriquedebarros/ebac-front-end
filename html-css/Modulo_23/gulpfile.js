@@ -95,7 +95,7 @@ exports.scripts = tarefasJS;
 exports.imagens = tarefasImagem;
 exports.sass = tarefasSass;
 
-const processo = series(tarefasHTML, tarefasJS, tarefasCSS, tarefasSass);
+const processo = series(tarefasHTML, tarefasJS, tarefasCSS, tarefasSass, tarefasImagem);
 
 exports.total = parallel(tarefasHTML, tarefasJS, tarefasCSS, tarefasImagem);
 
