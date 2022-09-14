@@ -1,0 +1,15 @@
+$color-01: #aaccee;
+$color-02: #243985;
+
+$ff-title: Serif;
+$ff-body: Arial, sans-serif;
+
+body {
+    background-color: $color-01;
+    font-family: $ff-body;
+}
+
+.title {
+    color: $color-02;
+    font-family: $ff-title;
+}
