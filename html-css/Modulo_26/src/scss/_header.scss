@@ -1,0 +1,23 @@
+header .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.primary_nav{
+    display: flex;
+    flex-flow: row;
+    padding: 1rem 0;
+    gap: 1rem;
+    
+    &__item {
+        text-decoration: none;
+        color: $font-color-light-01;
+
+        &:hover {
+            text-decoration: underline;
+            color: $brand;
+            text-underline-offset: .3em;
+        }
+    }
+}

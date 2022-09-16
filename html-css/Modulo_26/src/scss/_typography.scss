@@ -1,0 +1,39 @@
+html, body {
+    font-family: $ff-body;
+    color: $font-color-light-02;
+    font-size: $fs-default;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: .02em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+h1, h2, h3, h4 {
+    font-family: $ff-title;
+    color: $font-color-light-01;
+    line-height: 1;
+    letter-spacing: .2em;
+}
+
+h1 {
+    font-size: $fs-title-1;
+    font-weight: 300;
+    color: $brand;
+}
+
+h2 {
+    font-size: $fs-title-2;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+h3 {
+    font-size: $fs-title-3;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1em;
+}

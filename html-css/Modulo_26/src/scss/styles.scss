@@ -1,0 +1,51 @@
+@import "reset";
+@import "vars";
+@import "typography";
+@import "header";
+@import 'vitrine';
+
+body {
+    background-color: $bg-dark-01;
+}
+
+header,
+section,
+footer {
+    display: block;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+    max-width: 90vw;
+}
+
+#sobre, #produtos, #contato {
+    padding: 3rem 0;
+}
+
+#sobre {
+    background-color: $bg-dark-02;
+
+    & p {
+        width: 60ch;
+    }
+}
+
+#contato {
+    background-color: $bg-light-02;
+    color: $font-color-dark-02;
+
+    & h2, & p {
+        color: $font-color-dark-02;
+    }
+}
+
+footer p {
+    font-size: $fs-small;
+    text-align: center;
+    padding: .5rem 0;
+    margin: 0;
+}
