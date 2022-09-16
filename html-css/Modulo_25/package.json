@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
-    "dev": "webpack serve --live-reload --hot --mode development",
+    "dev": "webpack server --live-reload --hot --mode development",
     "watch": "webpack --watch"
   },
   "repository": {
@@ -31,7 +31,7 @@
     "html-webpack-live-reload-plugin": "^1.0.12",
     "html-webpack-plugin": "^5.4.0",
     "mini-css-extract-plugin": "^2.4.3",
-    "node-sass": "^6.0.1",
+    "sass": "^1.54.9",
     "sass-loader": "^12.2.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.59.1",

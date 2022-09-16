@@ -1,10 +1,9 @@
-const path = require('path')
-const HtmlWebpack = require('html-webpack-plugin')
-const MiniCssExtract = require('mini-css-extract-plugin')
-const HtmlWebpackLiveReload = require('html-webpack-live-reload-plugin')
+const path = require('path');
+const HtmlWebpack = require('html-webpack-plugin');
+const MiniCssExtract = require("mini-css-extract-plugin");
+const HtmlWebpackLiveReload = require("html-webpack-live-reload-plugin");
 
 module.exports = {
-
     entry: './src/js/index.js',
     output: {
         filename: 'bundle.js',
@@ -62,5 +61,4 @@ module.exports = {
             filename: 'style.css'
         })
     ]
-
 }
