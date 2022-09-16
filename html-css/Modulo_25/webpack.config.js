@@ -1,13 +1,18 @@
 const path = require('path');
 const HtmlWebpack = require('html-webpack-plugin');
 const MiniCssExtract = require("mini-css-extract-plugin");
-const HtmlWebpackLiveReload = require("html-webpack-live-reload-plugin");
 
 module.exports = {
     entry: './src/js/index.js',
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist')
+    },
+    devServer: {
+        watchFiles: ["./src/"],
+        port: 3000,
+        open: true,
+        hot: true
     },
     module: {
         rules: [
@@ -56,7 +61,6 @@ module.exports = {
             filename: 'index.html',
             template: './src/index.html'
         }),
-        new HtmlWebpackLiveReload(),
         new MiniCssExtract({
             filename: 'style.css'
         })
