@@ -26,6 +26,14 @@ footer {
     padding: 3rem 0;
 }
 
+#sobre {
+    background-color: $bg-dark-02;
+
+    & p {
+        width: 60ch;
+    }
+}
+
 #contato {
     background-color: $bg-light-02;
     color: $font-color-dark-02;
@@ -33,10 +41,6 @@ footer {
     & h2, & p {
         color: $font-color-dark-02;
     }
-}
-
-#sobre {
-    background-color: $bg-dark-02;
 }
 
 footer p {
