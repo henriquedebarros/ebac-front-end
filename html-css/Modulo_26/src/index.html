@@ -19,6 +19,7 @@
                 <a class="primary_nav__item" href="#contato">Contato</a>
             </nav>
         </div>
+        <img class="header_hero" src="assets/header_hero.jpg" alt="">
     </header>
     <section id="sobre">
         <div class="container">
@@ -37,39 +38,39 @@
             <h2>Jornadas</h2>
             <div class="vitrine">
                 <div class="vitrine__item">
-                    <h3 class="vitrine__nomeProduto">Produto 1</h3>
-                    <div class="vitrine__image"></div>
-                    <p class="vitrine__desc">Descrição do produto</p>
+                    <h3 class="vitrine__nomeProduto">Órbita noturna</h3>
+                    <img class="vitrine__image vitrine__image-1" src="./assets/vitrine__image-1.jpg">
+                    <p class="vitrine__desc">Viagem de grande altitude contemplando os céus noturnos, a luminosidade atmosférica das cidades e apresentação das auroras vistas de cima como nunca antes.</p>
                     <a href="" class="vitrine__button">Ver detalhes</a>
                 </div>
                 <div class="vitrine__item">
-                    <h3 class="vitrine__nomeProduto">Produto 2</h3>
-                    <div class="vitrine__image"></div>
-                    <p class="vitrine__desc">Descrição do produto</p>
+                    <h3 class="vitrine__nomeProduto">Terra de longe</h3>
+                    <img class="vitrine__image vitrine__image-2" src="./assets/vitrine__image-2.jpg">
+                    <p class="vitrine__desc">Planagem em órbita distante da terra para visualização do globo e curvatura da Terra. Esta jornada inclui jantar em baixa gravidade com vista panorâmica.</p>
                     <a href="" class="vitrine__button">Ver detalhes</a>
                 </div>
                 <div class="vitrine__item">
-                    <h3 class="vitrine__nomeProduto">Produto 3</h3>
-                    <div class="vitrine__image"></div>
-                    <p class="vitrine__desc">Descrição do produto</p>
+                    <h3 class="vitrine__nomeProduto">Órbita lunar</h3>
+                    <img class="vitrine__image vitrine__image-3" src="./assets/vitrine__image-3.jpg">
+                    <p class="vitrine__desc">Rota orbital da Terra à Lua e três ciclos de rotação. Inclui o lado escuro da Lua. Sujeito a temporadas pelos movimentos celestes.</p>
                     <a href="" class="vitrine__button">Ver detalhes</a>
                 </div>
                 <div class="vitrine__item">
-                    <h3 class="vitrine__nomeProduto">Produto 4</h3>
-                    <div class="vitrine__image"></div>
-                    <p class="vitrine__desc">Descrição do produto</p>
+                    <h3 class="vitrine__nomeProduto">Passeio no solo lunar</h3>
+                    <img class="vitrine__image vitrine__image-4" src="./assets/vitrine__image-4.jpg">
+                    <p class="vitrine__desc">Passeio em solo lunar com roupas de proteção com total segurança em terreno preparado. Pontos de aterrisagem definidos no mapa em mais detalhes.</p>
                     <a href="" class="vitrine__button">Ver detalhes</a>
                 </div>
                 <div class="vitrine__item">
-                    <h3 class="vitrine__nomeProduto">Produto 5</h3>
-                    <div class="vitrine__image"></div>
-                    <p class="vitrine__desc">Descrição do produto</p>
+                    <h3 class="vitrine__nomeProduto">Órbita marciana</h3>
+                    <img class="vitrine__image vitrine__image-5" src="./assets/vitrine__image-5.jpg">
+                    <p class="vitrine__desc">Viagem orbital com visualização de Marte. Sujeita a temporada pelos movimentos planetários. Consulte a descrição para ver meses disponíveis.</p>
                     <a href="" class="vitrine__button">Ver detalhes</a>
                 </div>
                 <div class="vitrine__item">
-                    <h3 class="vitrine__nomeProduto">Produto 6</h3>
-                    <div class="vitrine__image"></div>
-                    <p class="vitrine__desc">Descrição do produto</p>
+                    <h3 class="vitrine__nomeProduto">Passeio guiado em Marte</h3>
+                    <img class="vitrine__image vitrine__image-6" src="./assets/vitrine__image-6.jpg">
+                    <p class="vitrine__desc">Visita guiada em solo marciano com coleta de rochas e experimentos. Tempo de estadia limitado devido a radiação cósmica.</p>
                     <a href="" class="vitrine__button">Ver detalhes</a>
                 </div>
             </div>
@@ -79,10 +80,14 @@
         <div class="container">
             <h2>Contato</h2>
             <form class="contato">
-                <label class="contato__label" for="nome">Nome</label>
-                <input class="contato__input" type="text" id="nome" placeholder="Nome">
-                <label class="contato__label" for="email">Email</label>
-                <input class="contato__input" type="text" id="email" placeholder="Email">
+                <div class="contato__grupo">
+                    <label class="contato__label" for="nome">Nome</label>
+                    <input class="contato__input" type="text" id="nome" placeholder="Digite seu nome">
+                </div>
+                <div class="contato__grupo">
+                    <label class="contato__label" for="email">Email</label>
+                    <input class="contato__input" type="email" id="email" placeholder="Digite seu e-mail">
+                </div>
                 <button class="contato__button">Enviar</button>
             </form>
         </div>
@@ -92,5 +97,15 @@
             <p>GalaX &copy; Todos os direitos reservados.<br><small>Desenvolvido por Henrique Barros</small></p>
         </div>
     </footer>
+    <svg class="bg_stars" xmlns="http://www.w3.org/2000/svg">
+        <filter id="filter">
+            <feTurbulence baseFrequency="0.2"/>
+            <feColorMatrix values="0 0 0 9 -4
+                                   0 0 0 9 -4
+                                   0 0 0 9 -4
+                                   0 0 0 0 1"/>
+        </filter>
+        <rect width="100%" height="100%" filter="url(#filter)"/>
+    </svg>
 </body>
 </html>

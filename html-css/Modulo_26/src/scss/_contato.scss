@@ -1,0 +1,58 @@
+.contato {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0;
+
+    @media (max-width: 700px) {
+        flex-flow: column;
+        gap: 1rem;
+    }
+
+    &__grupo {
+        width: 100%;
+    }
+
+    &__label {
+        font-size: $fs-small;
+    }
+
+    &__input {
+        width: 70%;
+        height: 2rem;
+        margin-left: 1rem;
+        padding-left: 1rem;
+        border-radius: .5rem;
+
+        &:focus {
+            outline: 0;
+            box-shadow: rgba(6, 44, 67, 0.5) 1px 1px 16px;
+        }
+
+        @media (max-width: 700px) {
+            width: 80%;
+        }
+    }
+
+    &__button {
+        background-color: $brand;
+        color: font$font-color-dark-02;
+        font-family: $ff-title;
+        font-size: $fs-default;
+        font-weight: 500;
+        border-radius: .5rem;
+        padding: .5em 2em;
+        text-decoration: none;
+
+        &:hover {
+            cursor: pointer;
+            font-weight: 700;
+            box-shadow: rgba(167, 205, 116, 1) 1px 1px 16px;
+        }
+
+        @media (max-width: 700px) {
+            width: 100%;
+        }
+    }
+}

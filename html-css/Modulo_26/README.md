@@ -12,6 +12,12 @@ npm install
 
 ## Rodando servidor ao vivo
 
+Para contornar alguns problemas ligados ao servidor do webpack, no terminal utilize o comando
+
+```
+export NODE_OPTIONS=--openssl-legacy-provider
+```
+
 O servidor que auto atualiza a cada alteração no source é acessado pelo comando
 
 ```

@@ -2,13 +2,25 @@ header .container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 500px) {
+        margin-top: 1rem;
+        flex-direction: column;
+    }
 }
 
 .primary_nav{
     display: flex;
     flex-flow: row;
     padding: 1rem 0;
-    gap: 1rem;
+    gap: 2rem;
+
+    @media (max-width: 500px) {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 0;
+        gap: .75rem;
+    }
     
     &__item {
         text-decoration: none;
@@ -20,4 +32,13 @@ header .container {
             text-underline-offset: .3em;
         }
     }
+}
+
+.header_hero {
+    width: 100%;
+    height: 95vh;
+    object-fit: cover;
+    object-position: top center;
+    filter: hue-rotate(180deg);
+    mix-blend-mode: lighten;
 }

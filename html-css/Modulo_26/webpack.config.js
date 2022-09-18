@@ -43,12 +43,11 @@ module.exports = {
             },
             {
                 test: /\.(jpeg|jpg|png|svg|gif)$/i,
-                use: {
-                    loader: 'file-loader',
-                    options: {
-                        name: './assets/[name].[ext]'
-                    }
-                }
+                loader: 'file-loader',
+                options: {
+                    name: "[name].[ext]",
+                    outputPath: "./assets/"
+                },
             },
             {
                 test: /\.html$/i,
