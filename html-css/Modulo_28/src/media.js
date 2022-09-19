@@ -1,40 +1,3 @@
-# Modulo 28
-
-## Revisão de Javascript
-
-Aplicando os conceitos mais modernos de Objeto e Classes em funções antigas do Javascript.
-
-### Funções recursivas     
-
-Proposta de simplificação usando apenas uma variável.
-
-
-``` js
-function contagemRegressiva(numero){
-
-    console.log(numero);  
-    
-    let proximoNumero = numero - 1;
-
-    if(proximoNumero > 0)
-
-        contagemRegressiva(proximoNumero);
-}
-```
-
-``` js
-function contagemRegressiva(numero){
-    console.log(numero);  
-    if(numero > 1) contagemRegressiva(numero - 1);
-}
-contagemRegressiva(10);
-```
-
-### Uso de Classes
-
-Para o exercício de cálculo e mostrar aprovação, pensei no uso de uma classe que permitisse várias entradas de notas e guardasse em cada instância a média e status.
-
-```js
 class Notas_semestre {
     constructor(...valores) {
         this.notas = valores;
@@ -73,4 +36,3 @@ const Notas2sem = new Notas_semestre(8, 7, 6);
 
 console.log("A média do 1º semestre foi " + Notas1sem.mediafinal() + " e o status foi: " + Notas1sem.statusfinal());
 console.log("A média do 2º semestre foi " + Notas2sem.mediafinal() + " e o status foi: " + Notas2sem.statusfinal());
-```
