@@ -74,6 +74,55 @@ footer {
     margin: 0 auto;
 }
 
+.pelicula {
+    width: 100%;
+
+    #filme {
+        width: 120%;
+        animation: rodando 5s infinite linear;
+    }
+
+    .parte {
+        fill: $color-brand;
+        rotate: -90deg;
+        scale: 0.3;
+        translate: -5px 150px;   
+    }
+
+    .parte1 {translate: -5px 150px;}
+    .parte2 {translate: 125px 150px;}
+    .parte3 {translate: 255px 150px;}
+    .parte4 {translate: 385px 150px;}
+    .parte5 {translate: 515px 150px;}
+    .parte6 {translate: 645px 150px;}
+    .parte7 {translate: 775px 150px;}
+    .parte8 {translate: 905px 150px;}
+    .parte9 {translate: 1035px 150px;}
+    .parte10 {translate: 1165px 150px;}
+    .parte11 {translate: 1295px 150px;}
+    .parte12 {translate: 1425px 150px;}
+    .parte13 {translate: 1555px 150px;}
+    .parte14 {translate: 1685px 150px;}
+    .parte15 {translate: 1815px 150px;}
+    .parte16 {translate: 1945px 150px;}
+    .parte17 {translate: 1815px 150px;}
+    .parte18 {translate: 2075px 150px;}
+    .parte19 {translate: 2205px 150px;}
+    .parte20 {translate: 2335px 150px;}
+    .parte21 {translate: 2465px 150px;}
+    .parte22 {translate: 2595px 150px;}
+    .parte23 {translate: 2725px 150px;}
+
+}
+
+@keyframes rodando {
+    from {
+        translate: -130px 0px;
+    }
+    to {
+        translate: 0px 0px;
+    }
+}
 
 .waves {
     bottom: 0;
