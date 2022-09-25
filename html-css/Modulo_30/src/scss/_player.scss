@@ -1,67 +1,74 @@
+#trailer {
+    width: 100%;
+    background-color: $bg-color-dark;
 
-#player {
-
-    .fa {
-        font-size: 20px;
-    }
-
-    position: relative;
-    display: flex;
-    width: max-content;
-    height: max-content;
-    justify-content: center;
-    align-items: center;
-    margin: 4rem auto;
-
-    video {
-        width: 600px;
-        height: auto;
-    }
-
-    .controls {
-        background-color: #000;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
+    #player {
+        position: relative;
         display: flex;
-        justify-content: space-around;
-        opacity: 0.2;
-        padding: 1rem;
-        transition: opacity 0.4s;
-    
-        &:hover {
+        width: max-content;
+        height: max-content;
+        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem auto;
+        padding: 0;
+
+        .fa {font-size: 20px;}
+
+        video {
+            width: 600px;
+            height: auto;
+            margin-bottom: 3rem;
+        }
+
+        &:hover .controls{
             opacity: 1;
         }
-    
-        button {
-            background: transparent;
-            color: #fff;
-            font-weight: bolder;
-            text-shadow: 2px 1px 2px #000;
-            border: none;
-            cursor: pointer;
-        }
-    
-        .timeline {
-            flex: 1;
+
+        .controls {
+            background-color: $bg-color-dark;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
             display: flex;
-            align-items: center;
-            border: none;
-            border-right: 2px solid #ccc;
-            border-left: 2px solid #ccc;
-    
-            .bar{
-                background: #e00;
-                height: 4px;
+            justify-content: space-around;
+            opacity: 0.1;
+            padding: 1rem;
+            transition: opacity 0.4s;
+
+
+            button {
+                width: 1.5rem;
+                margin-right: 1rem;
+                background: transparent;
+                color: #fff;
+                font-weight: bolder;
+                text-shadow: 2px 1px 2px #000;
+                border: none;
+                cursor: pointer;
+            }
+
+            .timeline {
                 flex: 1;
-    
-                .inner{
-                    background: #ccc;
-                    width: 0%;
-                    height: 100%;
+                display: flex;
+                align-items: center;
+                border: none;
+                border-right: 2px solid #ccc;
+                border-left: 2px solid #ccc;
+
+                .bar {
+                    background: $color-light;
+                    height: 4px;
+                    flex: 1;
+
+                    .inner {
+                        background: $color-brand;
+                        width: 0%;
+                        height: 100%;
+                    }
                 }
             }
-        }
 
+        }
     }
 }

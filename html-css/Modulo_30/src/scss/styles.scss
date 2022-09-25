@@ -1,6 +1,6 @@
 // Cores
 $color-brand: #06735F;
-$color-accent: #d3b119;
+$color-accent: #40c4b9;
 $color-light: #FEFEFE;
 $color-dark: #261E1C;
 
@@ -49,15 +49,13 @@ h3 {font-size: 1.25rem;}
 
 header {
     width: 100vw;
-    position: relative;
-    height: 50vh;
     overflow: hidden;
+    background-color: $bg-color-dark;
+    display: flex;
 
     h1 {
-        text-align: center;
-        margin-top: 4rem;
-        position: relative;
-        z-index: 9;
+        font-size: 3rem;
+        color: $color-accent;
     }
 }
 
@@ -74,12 +72,36 @@ footer {
     margin: 0 auto;
 }
 
+// Animações
+
+#rolo {
+    width: 170px;
+    padding: 0;
+    margin: 0;
+
+    .girador {
+        transform-origin: center;
+        animation: gira 5s infinite;
+    }
+}
+
+@keyframes gira {
+    from {
+        rotate: 0deg;
+    }
+    to {
+        rotate: -360deg;
+    }
+}
+
+// Palícula infinita
+
 .pelicula {
     width: 100%;
 
     #filme {
         width: 120%;
-        animation: rodando 5s infinite linear;
+        animation: rodando 10s infinite linear;
     }
 
     .parte {
@@ -121,57 +143,6 @@ footer {
     }
     to {
         translate: 0px 0px;
-    }
-}
-
-.waves {
-    bottom: 0;
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 110%;
-
-    .wave-01 {
-        animation: wave1 3s ease-in-out infinite alternate;
-        
-    }
-
-    .wave-02 {
-        animation: wave2 3s ease-in-out infinite alternate;
-    }
-
-    .wave-03 {
-        animation: dash1 3s cubic-bezier(0, 1.23, 1, 0.11) infinite alternate;
-        stroke-dasharray: 150;
-        stroke: #fff;
-        stroke-width: 3px;
-    }
-}
-
-@keyframes wave1 {
-    from {
-        transform: translateX(-50px);
-    }
-}
-
-@keyframes wave2 {
-    from {
-        transform: translateX(-100px);
-    }
-}
-
-@keyframes wave3 {
-    from {
-        transform: translateX(-20px);
-    }
-}
-
-@keyframes dash1 {
-    from {
-       stroke-dashoffset: 2000;
-    }
-    to {
-        stroke-dashoffset: 0;
     }
 }
 
