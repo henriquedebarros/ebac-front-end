@@ -12,6 +12,12 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
+    devServer: {
+        watchFiles: ["./src/"],
+        port: 3000,
+        open: true,
+        hot: true
+    },
     module: {
         rules: [
             {
