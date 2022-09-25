@@ -34,8 +34,9 @@
             height: 250px;
         }
 
-        img+img {
-            margin-left: 1rem;
-        }
+    }
+    
+    div+div {
+        margin-left: 1rem;
     }
 }
