@@ -1,0 +1,21 @@
+.carrossel {
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    scrollbar-color: $bg-color-light $color-brand;
+    opacity: 0.5;
+
+    img {
+        height: 250px;
+    }
+
+    img + img {
+        margin-left: 1rem;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}

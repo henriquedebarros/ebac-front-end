@@ -1,0 +1,23 @@
+#cenas {
+    .mosaico {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 100%;
+        
+        img {
+            height: 200px;
+            width: auto;
+            object-fit: fill;
+            object-position: bottom;
+            margin-bottom: 1rem;
+
+            &:hover {
+                opacity: 75%;
+                outline: 2px solid $color-brand;
+            }
+        }
+
+    }
+
+}

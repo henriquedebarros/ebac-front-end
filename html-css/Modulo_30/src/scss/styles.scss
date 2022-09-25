@@ -1,62 +1,79 @@
-$color-font: #fff;
-$color-bg-default: #33f;
-$font-default: Arial, Helvetica, sans-serif;
+// Cores
+$color-brand: #06735F;
+$color-accent: #d3b119;
+$color-light: #FEFEFE;
+$color-dark: #261E1C;
 
+$font-color-light: #FEFEFE;
+$font-color-dark: #261E1C;
+
+$bg-color-light: #F2F2F2;
+$bg-color-dark: #000;
+
+$ff-heading: DMSans, Helvetica, Arial, "Lucida Grande", sans-serif;
+$ff-body: Arial, Helvetica, sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;1,500&display=swap');
+
+// Reset
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+// Tipografia
+
 body {
-    font-family: $font-default;
-    margin: 0;
+    font-family: $ff-body;
+    color: $font-color-dark;
+    background-color: $bg-color-light;
+    font-size: 1rem;
+    font-weight: 300;
 }
 
-h1 {
-    color: $color-font;
-    text-align: center;
-    width: 100%;
+h1, h2, h3 {
+    font-family: $ff-heading;
+    color: $font-color-dark;
+    font-weight: 500;
+    font-variant: small-caps;
+    line-height: 1;
+    margin: .5em 0;
 }
 
-#imagens {
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        max-width: 100%;
-        margin: 0 auto;
-        
-        img {
-            height: 200px;
-            width: auto;
-            margin: 5px;
-            object-fit: fill;
-            object-position: bottom;
-            border: 1px solid #333;
+h1 {font-size: 1.3rem;}
+h2 {font-size: 1.5rem; font-weight: bold;}
+h3 {font-size: 1.25rem;}
 
-            &:hover {
-                opacity: 75%;
-                border-color: #33f;
-            }
-        }
+// Layout básico
 
-    }
-
-}
 header {
-    background-color: $color-bg-default;
     width: 100vw;
     position: relative;
     height: 50vh;
     overflow: hidden;
 
     h1 {
+        text-align: center;
         margin-top: 4rem;
         position: relative;
         z-index: 9;
     }
 }
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: $color-dark;
+    color: $font-color-light;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 
 .waves {
     bottom: 0;
@@ -110,3 +127,5 @@ header {
 }
 
 @import 'player';
+@import 'cenas';
+@import 'carrosel';
