@@ -1,19 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo Ajax</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <title>AJAX</title>
 </head>
 <body>
-    <h1>AJAX</h1>
-    <div id="main"></div>
-    <form>
-        <label for="usuario">Nome do usuário</label>
-        <input type="text" name="usuario" id="username">
-    </form>
-    <script src="./js/script.js"></script>
-    <script src="./js/posts.js"></script>
+    <header class="bg-primary mb-5 p-3 text-bg-primary">
+        <div class="container">
+            <h1>Produtos AJAX</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="rol">
+                <p>Produtos disponíveis</p>
+            </div>
+            <div class="btn-group d-flex mb-3" role="group">
+                <a class="btn btn-outline-primary pagina active" href="#" rel="1">1</a>
+                <a class="btn btn-outline-primary pagina" href="#" rel="2">2</a>
+                <a class="btn btn-outline-primary pagina" href="#" rel="3">3</a>
+                <a class="btn btn-outline-primary pagina" href="#" rel="4">4</a>
+                <a class="btn btn-outline-primary pagina" href="#" rel="5">5</a>
+                <a class="btn btn-outline-primary pagina" href="#" rel="6">6</a>
+                <a class="btn btn-outline-primary pagina" href="#" rel="7">7</a>
+                <a class="btn btn-outline-primary pagina" href="#" rel="8">8</a>
+                <a class="btn btn-outline-primary pagina" href="#" rel="9">9</a>
+                <a class="btn btn-outline-primary pagina" href="#" rel="10">10</a>
+            </div>
+            <div id="listaProd" class="row row-cols-5 g-4">
+            </div>
+        </div>
+    </main>
+    <footer class="bg-primary mt-5 p-3 text-center text-bg-primary">
+        <p>Desenvolvido por Henrique Barros</p>
+    </footer>
+
+    <script src="./js/fetch.js"></script>
 </body>
 </html>
