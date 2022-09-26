@@ -14,8 +14,21 @@ input {
     padding: .75rem .5rem .5rem .5rem;
     display: block;
     font-size: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     background-color: var(--bg-light-2);
+    position: relative;
+    isolation: isolate;
+}
+
+.disabled {
+    background-color: var(--color-disabled);
+    color: var(--text-primary);
+    border-color: var(--color-disabled);
+}
+
+.disabled + label {
+    background-color: var(--color-disabled);
+    color: var(--color-neutral);
 }
 
 .input-group {
@@ -26,13 +39,29 @@ input {
     margin-right: 1rem;
 }
 
+.valid {
+    border-color: var(--color-positive);
+}
+
+.valid + label {
+    color: var(--color-positive);
+}
+
+.invalid {
+    border-color: var(--color-negative);
+}
+
+.invalid + label {
+    color: var(--color-negative);
+}
+
 input:focus {
     outline: 0;
-    border-color: var(--color-primary);
+    border-color: var(--color-focus);
 }
 
 input:focus + label {
-    color: var(--color-primary);
+    color: var(--color-focus);
 }
 
 label {
@@ -40,8 +69,9 @@ label {
     font-weight: 400;
     background-color: var(--bg-light-2);
     padding: .25em;
+    border-radius: .5rem;
     position: absolute;
-    translate: 20% -390%;
+    translate: 20% -460%;
 }
 
 .long-input {
@@ -62,7 +92,7 @@ button {
 
 button:hover,
 button:focus {
-    outline: 3px solid var(--color-neutral);
+    outline: 2px solid var(--color-neutral);
 }
 
 #mensagem p {

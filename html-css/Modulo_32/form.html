@@ -25,30 +25,37 @@
                 <label for="CPF">CPF</label>
             </div>
             <div class="input-group">
-                <input type="text" class="not-null" placeholder="Digite seu CEP" id="cep" name="cep">
+                <input type="text" class="not-null" placeholder="Digite seu CEP" id="cep" name="CEP">
                 <label for="CEP">CEP</label>
             </div>
 
             <div class="input-group">
-                <input type="text" name="rua" id="rua" size="30" class="long-input mg-1">
+                <input type="text" name="rua" id="rua" size="30" class="long-input mg-1 disabled" disabled>
                 <label for="rua">Rua</label>
             </div>
 
             <div class="input-group">
-                <input type="text" name="numero" id="numero" size="6" maxlength="6">
+                <input type="text" name="numero" id="numero" size="6" maxlength="6" class="disabled" disabled>
                 <label for="numero">Número</label>
             </div>
-        
-            <input type="text" id="bairro" class="long-input">
-            <label for="bairro">Bairro</label>
+
+            <div class="input-group">
+                <input type="text" id="bairro" class="long-input disabled" disabled>
+                <label for="bairro">Bairro</label>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="comp" class="disabled" disabled>
+                <label for="comp">Complemento</label>
+            </div>
         
             <div class="input-group">
-                <input type="text" id="cidade" size="35" class="mg-1">
+                <input type="text" id="cidade" size="35" class="mg-1 disabled" disabled>
                 <label for="cidade">Cidade</label>
             </div>
 
             <div class="input-group">
-                <input type="text" id="uf" size="2" maxlength="2">
+                <input type="text" id="uf" size="3" maxlength="2" class="disabled" disabled>
                 <label for="uf">UF</label>
             </div>
 

@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Mali:wght@300;400;700&display=swap');
 
 :root {
-    --color-primary: #daae1f;
+    --color-primary: #f0bd55;
     --text-primary: #333;
 
-    --color-positive: #9eb57d;
     --color-neutral: #6e6b65;
+    --color-disabled: #a8a7a4;
+    --color-focus: #ce9524;
+    --color-positive: #688b37;
     --color-negative: #bd201f;
 
     --bg-light-1: #fffaf0;
