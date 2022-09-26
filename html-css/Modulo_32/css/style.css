@@ -1,74 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@300;400;700&display=swap');
+
+:root {
+    --color-primary: #daae1f;
+    --text-primary: #333;
+
+    --color-positive: #9eb57d;
+    --color-neutral: #6e6b65;
+    --color-negative: #bd201f;
+
+    --bg-light-1: #fffaf0;
+    --bg-light-2: #fffcfa;
+}
+
 * {
     border: 0;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 62.5%;
     box-sizing: border-box;
+    font-family: 'Mali', cursive;
 }
 
 body {
-    font-size: 16px;
+    background-color: var(--bg-light-1);
+    font-size: 1rem;
+    font-weight: 300;
 }
 
 .container {
-    max-width: 1100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: min(90%, 1200px);
+    height: 90vh;
     margin: 0 auto;
-    display: block;
-}
-
-#posts {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    font-size: 1.5rem;
-    justify-content: start;
+    background-color: var(--bg-light-2);
+    box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+    border-radius: 1rem;
+    overflow: hidden;
 }
 
-h1 {
-    font-size: 2.2rem;
-    color: darkblue;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-h3 {
-    font-size: 2rem;
-    margin-bottom: .5rem;
-}
-
-p {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
-    display: block;
-}
-
-input[type="text"] {
-    border: 1px solid #000;
-    border-radius: 5px;
-    font-size: 1.5rem;
-    padding: 1rem;
-}
-
-.button {
-    background-color: darkblue;
-    border: 0;
-    border-radius: 5px;
-    color: #fff;
-    display: block;
-    font-size: 1.6rem;
-    cursor: pointer;
-    margin: 1rem 0 2rem;
-    padding: 1rem 2rem;
-    width: fit-content;
-
-}
-
-.button:hover {
-    opacity: .75;
-}
-
-.posts-item {
-    width: calc(100% / 3);
-    padding: 1rem;
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }

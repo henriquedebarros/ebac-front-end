@@ -1,57 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Validação de formulário</title>
+    <title>Formulário com CEP dinâmico</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/form.css">
 </head>
 <body>
-<div class="container">
-    <form action="" id="form">
-        <div class="input-group">
-            <label for="nome">Nome</label>
-            <input type="text" class="not-null" placeholder="Nome" id="nome" name="nome">
-        </div>
-        <div class="input-group">
-            <label for="email">E-mail</label>
-            <input type="text"  class="not-null" placeholder="E-mail" id="email" name="email">
-        </div>
-        <div class="input-group">
-            <label for="CPF">CPF</label>
-            <input type="text"  class="not-null" placeholder="CPF" id="cpf" name="cpf">
-        </div>
-        <div class="input-group">
-            <label for="CEP">CEP</label>
-            <input type="text"  class="not-null" placeholder="CEP" id="cep" name="cep">
-        </div>
+    <div class="container">
+        <img src="./assets/nathan-dumlao-k3DmHnnAH3M-unsplash.jpg" alt="">
+        <form action="" id="form">
+            <p>Preencha o formulário e comece a receber a cesta na sua casa!</p>
 
-         <div class="address">
+            <input type="text" class="not-null long-input" placeholder="Digite seu nome" id="nome" name="Nome">
+            <label for="Nome">Nome</label>
+
+            <input type="email" class="not-null long-input" placeholder="Digite seu e-mail" id="email" name="E-mail">
+            <label for="E-mail">E-mail</label>
+
             <div class="input-group">
+                <input type="text" class="not-null mg-1" placeholder="Digite seu CPF" id="cpf" name="CPF">
+                <label for="CPF">CPF</label>
+            </div>
+            <div class="input-group">
+                <input type="text" class="not-null" placeholder="Digite seu CEP" id="cep" name="cep">
+                <label for="CEP">CEP</label>
+            </div>
+
+            <div class="input-group">
+                <input type="text" name="rua" id="rua" size="30" class="long-input mg-1">
                 <label for="rua">Rua</label>
-                <input type="text" id="rua" size="50">
             </div>
+
             <div class="input-group">
-                <label for="bairro">Bairro</label>
-                <input type="text" id="bairro" size="30">
+                <input type="text" name="numero" id="numero" size="6" maxlength="6">
+                <label for="numero">Número</label>
             </div>
+        
+            <input type="text" id="bairro" class="long-input">
+            <label for="bairro">Bairro</label>
+        
             <div class="input-group">
+                <input type="text" id="cidade" size="35" class="mg-1">
                 <label for="cidade">Cidade</label>
-                <input type="text" id="cidade" size="30">
             </div>
+
             <div class="input-group">
+                <input type="text" id="uf" size="2" maxlength="2">
                 <label for="uf">UF</label>
-                <input type="text" id="uf" size="2">
             </div>
-        </div>
-        <div class="input-group">
+
             <button>Cadastrar</button>
-        </div>
-    </form>
-    <div id="mensagem"> </div>
-</div>
-<script src="./js/form.js"></script>
+            
+            <div id="mensagem"> </div>
+        </form>
+    </div>
+    <script src="./js/form.js"></script>
 </body>
 </html>
