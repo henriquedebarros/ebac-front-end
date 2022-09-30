@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://henriquebarros.me/</loc>
+        <lastmod>2022-08-10T16:45:20+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>http://henriquebarros.me/index.html</loc>
+        <lastmod>2022-08-10T16:45:20+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://henriquebarros.me/pages/aboutme.html</loc>
+        <lastmod>2022-08-10T16:46:11+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://henriquebarros.me/pages/project1.html</loc>
+        <lastmod>2022-08-10T16:46:11+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://henriquebarros.me/pages/project2.html</loc>
+        <lastmod>2022-08-10T16:46:11+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://henriquebarros.me/pages/project3.html</loc>
+        <lastmod>2022-08-10T16:46:11+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+</urlset>
