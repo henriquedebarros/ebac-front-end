@@ -162,7 +162,10 @@ a {
 	transition: all 0.5s;	
 	text-align: center;
 	min-width: fit-content;
+	min-height: 240px;
+	position: relative;
 }
+
 .featured-item:hover {
 	opacity: 0.9;
 }
@@ -493,6 +496,22 @@ a {
 	display: none;
 }
 
+.imagem_modal {
+	width: 100%;
+}
+
+.imagem_modal img {
+	display: block;
+	width: auto;
+	height: 12rem;
+	margin: 0 auto;
+	padding-block: .5rem;
+}
+
+.invalid {
+	outline: 1px solid red;
+}
+
 /* Responsive Style */
 @media (max-width: 992px) {
 	.banner {
@@ -506,7 +525,7 @@ a {
 		display: none;
 	}
 	#navbarResponsive {
-	    z-index: 99999;
+	    z-index: 3;
 	    position: absolute;
 	    top: 160px;
 	    width: 100%;
@@ -559,5 +578,11 @@ a {
 	div.owl-carousel .owl-theme {
 		display: flex;
 		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 380px) {
+	.navbar .navbar-brand img {
+		width: 70%;
 	}
 }

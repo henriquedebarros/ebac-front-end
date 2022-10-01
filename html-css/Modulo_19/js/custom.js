@@ -22,16 +22,81 @@ $(document).ready(function(){
     });
 
     function checkFilling(input){
-        if (input.val() == '' || input.val().length < 2) {
+        if (input.val() == '' || input.val().length < 5) {
             input.parent().find('.text-muted').show();
             input.addClass('invalid');
             input.parent().parent().find("#btnEnviar").prop("disabled", true);
-            return false
+            return false;
         }
         else {
-            input.parent().find('.text-muted').hide();
-            input.removeClass('invalid');
-            input.parent().parent().find("#btnEnviar").prop("disabled", false);
+            if(input[0].name == "nome") {
+                input.parent().find('.text-muted').hide();
+                input.removeClass('invalid');
+                input.parent().parent().find("#btnEnviar").prop("disabled", false);
+                return true;
+            }
+            else {
+                return specificCheck(input);
+            }
+        }
+    }
+
+    function specificCheck (campo) {
+        let emailRE = new RegExp('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$');
+        let cepRE = new RegExp('^[0-9]{5}\-[0-9]{3}$');
+        let celRE = new RegExp('^[0-9]{5}\-[0-9]{4}$');
+        let cpfRE = new RegExp('^[0-9]{3}\.[0-9]{3}\.[0-9]{3}\-[0-9]{2}');
+        
+        campo.parent().find('.text-muted').show();
+        campo.addClass('invalid');
+        campo.parent().parent().find("#btnEnviar").prop("disabled", true);
+
+        switch (campo[0].name) {
+            case "email":
+                if(emailRE.test(campo[0].value)) {
+                    campo.parent().find('.text-muted').hide();
+                    campo.removeClass('invalid');
+                    campo.parent().parent().find("#btnEnviar").prop("disabled", false);
+                    return true;
+                }
+                else {return false;}
+                break;
+            case "date":
+                if(campo[0].value != "") {
+                    campo.parent().find('.text-muted').hide();
+                    campo.removeClass('invalid');
+                    campo.parent().parent().find("#btnEnviar").prop("disabled", false);
+                    return true;
+                }
+                else {return false;}
+                break;
+            case "cep":
+                if(cepRE.test(campo[0].value)) {
+                    campo.parent().find('.text-muted').hide();
+                    campo.removeClass('invalid');
+                    campo.parent().parent().find("#btnEnviar").prop("disabled", false);
+                    return true;
+                }
+                else {return false;}
+                break;
+            case "phone":
+                if(celRE.test(campo[0].value)) {
+                    campo.parent().find('.text-muted').hide();
+                    campo.removeClass('invalid');
+                    campo.parent().parent().find("#btnEnviar").prop("disabled", false);
+                    return true;
+                }
+                else {return false;}
+                break;
+            case "cpf":
+                if(cpfRE.test(campo[0].value)) {
+                    campo.parent().find('.text-muted').hide();
+                    campo.removeClass('invalid');
+                    campo.parent().parent().find("#btnEnviar").prop("disabled", false);
+                    return true;
+                }
+                else {return false;}
+                break;
         }
     }
 
@@ -40,21 +105,15 @@ $(document).ready(function(){
 
         // Verifica se está tudo preenchido antes de enviar
         let allInputs = $(this).find("input");
-        $.each(allInputs, function(key, value) {
-            valor = $(value).val();
-            if (value == "") {return false}
+        let allTests = [];
+
+        allInputs.each(function() {
+            allTests.push(checkFilling($(this)));
         })
 
-        // Expressões regulares para verificar alguns campos
-        let inputEmail = $(this).find("#email").val();
-        let inputCEP = $(this).find("#cep").val();
-        let inputCPF = $(this).find("#cpf").val();
-        let emailRE = new RegExp('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$');
-        let cepRE = new RegExp('^[0-9]{5}\-[0-9]{3}$');
-        let cpfRE = new RegExp('^[0-9]{3}\.[0-9]{3}\.[0-9]{3}\-[0-9]{2}');
-                
-        if (emailRE.test(inputEmail) && cepRE.test(inputCEP) && cpfRE.test(inputCPF)) {
-            window.alert("Cadastro efetuado!")
+        if (allTests.every(element => element === true)) {
+            window.alert("Cadastro efetuado!");
+            $(this)[0].reset();
         }
         else {
             return false;
