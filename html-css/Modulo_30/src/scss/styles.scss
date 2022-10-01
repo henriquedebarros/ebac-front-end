@@ -30,6 +30,7 @@ body {
     background-color: $bg-color-light;
     font-size: 1rem;
     font-weight: 300;
+    overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -39,6 +40,10 @@ h1, h2, h3 {
     font-variant: small-caps;
     line-height: 1;
     margin: .5em 0;
+
+    @media (max-width: 1200px) {
+        padding-left: 1rem;
+    }
 }
 
 h1 {font-size: 1.3rem;}
@@ -52,6 +57,7 @@ header {
     overflow: hidden;
     background-color: $bg-color-dark;
     display: flex;
+    padding-top: 2rem;
 
     h1 {
         font-size: 3rem;
@@ -102,6 +108,10 @@ footer {
     #filme {
         width: 120%;
         animation: rodando 10s infinite linear;
+
+        @media (max-width: 560px) {
+            width: 150%;
+        }
     }
 
     .parte {

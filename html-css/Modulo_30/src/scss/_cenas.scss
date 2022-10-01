@@ -2,8 +2,9 @@
     .mosaico {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
         max-width: 100%;
+        gap: .5rem;
         
         img {
             height: 200px;
@@ -16,6 +17,11 @@
             &:hover {
                 filter: grayscale(0) brightness(1) contrast(1.2);
                 outline: 2px solid $color-brand;
+            }
+
+            @media (max-width: 460px) {
+                width: 100%;
+                height: auto;
             }
         }
 
