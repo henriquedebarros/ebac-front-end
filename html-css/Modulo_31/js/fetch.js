@@ -30,16 +30,18 @@ function buscarProdutos(inicio) {
 
 function montarCard(dados) {
     let objeto = dados;
+    descricaoCurta = objeto.description;
+    if(descricaoCurta.length > 90) descricaoCurta = descricaoCurta.substring(0, 90) + "...";
     card = `
         <div class="col">
             <div class="card text-bg-light mb-3">
                 <img src="${objeto.thumbnail}" class="card-img-top ratio ratio-1x1" alt="${objeto.title}">
                 <div class="card-body">
                     <h5 class="card-title">${objeto.title}</h5>
-                    <p class="card-text">${objeto.description}</p>
+                    <p class="card-text">${descricaoCurta}</p>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted">${objeto.brand} | ${objeto.category} | ${objeto.rating}</small>
+                    <small class="text-muted"><b>${objeto.brand}</b><br>${objeto.category}<br>${objeto.rating}★</small>
                 </div>          
             </div>
         </div>`;

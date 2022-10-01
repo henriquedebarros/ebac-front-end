@@ -1,0 +1,23 @@
+.card-img-top {
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid black;
+}
+
+.card-body {
+    min-height: 160px;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: .75rem;
+}
+
+.card-footer {
+    font-size: .75rem;
+    text-align: center;
+}
