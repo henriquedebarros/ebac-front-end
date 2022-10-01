@@ -17,6 +17,7 @@ const inpEmail = document.getElementById("email");
 
 btnEnviar.addEventListener("click", (e) => {
     e.preventDefault();
+    let emailRE = new RegExp('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$');
 
     if(inpNome.value == "" || inpEmail.value == "") {
         if(inpNome.value == "")
@@ -25,8 +26,13 @@ btnEnviar.addEventListener("click", (e) => {
             alert("Preencha o campo E-mail");
     }
     else {
-        inpNome.value = "";
-        inpEmail.value = "";
-        alert("Cadastro feito");
+        if(emailRE.test(inpEmail.value)) {
+            inpNome.value = "";
+            inpEmail.value = "";
+            alert("Cadastro feito");
+        }
+        else {
+            alert("insira um e-mail válido")
+        }
     }
 })
