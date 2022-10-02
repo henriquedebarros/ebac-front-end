@@ -9,14 +9,19 @@
         width: 300%;
         display: flex;
         transition: transform 300ms ease;
-        
+
         &__slide {
             display: flex;
+
+            @media (max-width: 600px) {
+                flex-direction: column;
+            }
         }
 
         &__texto {
             padding: 2rem;
             width: 60%;
+            min-height: 240px;
 
             h2 {
                 margin-bottom: 1rem;
@@ -36,6 +41,13 @@
         display: flex;
         width: 35%;
         align-items: flex-end;
+
+        @media (max-width: 600px) {
+            width: 90%;
+            bottom: 2rem;
+            left: 2rem;
+            right: 0;
+        }
 
         &__botoes {
             margin-right: auto;

@@ -16,7 +16,12 @@ body {
 header,
 main,
 footer {
+    box-sizing: border-box;
     width: 100%;
+
+    @media (max-width: 984px) {
+        padding: 0 1rem;
+    }
 }
 
 .container {
@@ -25,7 +30,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 img {
     max-width: 100%;

@@ -4,10 +4,19 @@ header {
     .container {
         background-color: $bg-color-02;
         padding: 1.375rem 2rem;
+
+        @media (max-width: 900px) {
+            flex-direction: column;
+            gap: 2rem;
+        }
     }
 
     nav {
         margin-left: auto;
+
+        @media (max-width: 900px) {
+            margin-left: 0;
+        }
     }
 
     .nav {
@@ -17,6 +26,11 @@ header {
         &__item{
             width: fit-content;
             margin-right: 2.125rem;
+
+            @media (max-width: 440px) {
+                width: 100%;
+                margin-right: 0;
+            }
         }
         &__link{
             color: $brand;
@@ -27,6 +41,12 @@ header {
                 text-decoration: underline;
                 text-underline-offset: .5rem;
             }
+        }
+
+        @media (max-width: 440px) {
+            flex-direction: column;
+            text-align: center;
+            gap: 1rem;
         }
     }
 
