@@ -10,58 +10,43 @@
 </head>
 <body>
     <div class="container">
-        <img src="./assets/nathan-dumlao-k3DmHnnAH3M-unsplash.jpg" alt="">
+        <img src="./assets/banner.jpg" alt="">
         <form action="" id="form">
-            <p>Preencha o formulário e comece a receber a cesta na sua casa!</p>
+            <p class="col-1e4">Preencha o formulário e comece a receber a cesta na sua casa!</p>
 
-            <input type="text" class="not-null long-input" placeholder="Digite seu nome" id="nome" name="Nome">
-            <label for="Nome">Nome</label>
+            <input type="text" class="not-null col-1e4" placeholder="Digite seu nome" id="nome" name="Nome">
+            <label for="Nome" class="col-1e4 row-2e3">Nome</label>
 
-            <input type="email" class="not-null long-input" placeholder="Digite seu e-mail" id="email" name="E-mail">
-            <label for="E-mail">E-mail</label>
+            <input type="email" class="not-null col-1e4" placeholder="Digite seu e-mail" id="email" name="E-mail">
+            <label for="E-mail" class="col-1e4 row-4e5">E-mail</label>
 
-            <div class="input-group">
-                <input type="text" class="not-null mg-1" placeholder="Digite seu CPF" id="cpf" name="CPF">
-                <label for="CPF">CPF</label>
-            </div>
-            <div class="input-group">
-                <input type="text" class="not-null" placeholder="Digite seu CEP" id="cep" name="CEP">
-                <label for="CEP">CEP</label>
-            </div>
+            <input type="text" class="not-null col-1e2" placeholder="Digite seu CPF" id="cpf" name="CPF">
+            <label for="CPF" class="col-1e2 row-6e7">CPF</label>
 
-            <div class="input-group">
-                <input type="text" name="rua" placeholder="" id="rua" size="30" class="long-input mg-1 disabled" disabled>
-                <label for="rua">Rua</label>
-            </div>
+            <input type="text" class="not-null col-3e4" placeholder="Digite seu CEP" id="cep" name="CEP">
+            <label for="CEP" class="col-2e4 row-6e7">CEP</label>
 
-            <div class="input-group">
-                <input type="text" name="Número" id="numero" size="6" maxlength="6" class="disabled not-null" disabled>
-                <label for="Número">Número</label>
-            </div>
+            <input type="text" class="col-1e3 disabled" name="rua" placeholder="" id="rua" disabled>
+            <label for="rua" class="col-1e3 row-8e9">Rua</label>
 
-            <div class="input-group">
-                <input type="text" id="bairro" placeholder="" class="long-input disabled" disabled>
-                <label for="bairro">Bairro</label>
-            </div>
+            <input type="text" class="col-4 disabled not-null" name="Número" id="numero" disabled>
+            <label for="Número" class="col-4 row-8e9">Número</label>
 
-            <div class="input-group">
-                <input type="text" id="complemento" class="disabled" disabled>
-                <label for="complemento">Complemento</label>
-            </div>
-        
-            <div class="input-group">
-                <input type="text" id="cidade" size="35" placeholder="" class="mg-1 disabled" disabled>
-                <label for="cidade">Cidade</label>
-            </div>
+            <input type="text" class="col-1e2 disabled" id="bairro" placeholder="" disabled>
+            <label for="bairro" class="col-1e2 row-10e11">Bairro</label>
 
-            <div class="input-group">
-                <input type="text" id="uf" size="3" maxlength="2" class="disabled" disabled>
-                <label for="uf">UF</label>
-            </div>
+            <input type="text" class="disabled col-3e4" id="complemento" disabled>
+            <label for="complemento" class="col-3e4 row-10e11">Complemento</label>
 
-            <button>Cadastrar</button>
+            <input type="text" class="col-1e3 disabled" id="cidade" placeholder="" disabled>
+            <label for="cidade" class="col-1e3 row-12e13">Cidade</label>
+
+            <input type="text" class="col-4 disabled" id="uf" size="3" maxlength="2" disabled>
+            <label for="uf" class="col-4 row-12e13">UF</label>
+
+            <button class="col-1e4">Cadastrar</button>
             
-            <div id="mensagem"> </div>
+            <div id="mensagem" class="col-1e4"></div>
         </form>
     </div>
     <script src="./js/form.js"></script>
