@@ -1,4 +1,3 @@
-
 const form = document.getElementById('form');
 const nome = document.getElementById('nome');
 const email = document.getElementById('email');
@@ -15,6 +14,8 @@ const notNull = document.getElementsByClassName('not-null');
 let isCEP = '';
 let msg = [];
 let markup = '';
+
+form.reset();
 
 function isEmpty(elem){
     return elem.value.length < 1 ? `O campo <strong>${elem.name}</strong> não pode ser vazio.` : ''; 
@@ -103,9 +104,11 @@ cep.addEventListener("focusout", function(event) {
 
 form.addEventListener('submit', function(event){
     event.preventDefault();
-    const isEmail = '';
+    let isEmail = 0;
     let isCPF = 0;
-    mensagem.innerHTML = markup;
+    mensagem.innerHTML = '';
+    markup = '';
+    msg = [];
    
     Array.from(notNull).forEach(field => {
         let fieldState = isEmpty(field);
@@ -113,28 +116,30 @@ form.addEventListener('submit', function(event){
             msg.push(fieldState);
     });
 
-    if(email.length > 0) isEmail = validaEmail(email);
-    
-    if(isEmail) {
-        email.classList.remove("valid");
-        email.classList.add("invalid");
-        msg.push(isEmail);
+    if(email.value.length > 0) {
+        isEmail = validaEmail(email);
+        if(isEmail) {
+            email.classList.remove("valid");
+            email.classList.add("invalid");
+            msg.push(isEmail);
+        }
+        else {
+            email.classList.add("valid");
+            email.classList.remove("invalid");
+        }
     }
-    else {
-        email.classList.add("valid");
-        email.classList.remove("invalid");
-    }
-    
-    if(cpf.value.length > 0) isCPF = validaCPF(cpf);
-    
-    if(isCPF) {
-        cpf.classList.remove("valid");
-        cpf.classList.add("invalid");
-        msg.push(isCPF)
-    }
-    else {
-        cpf.classList.add("valid");
-        cpf.classList.remove("invalid");
+
+    if(cpf.value.length > 0) {
+        isCPF = validaCPF(cpf);
+        if(isCPF) {
+            cpf.classList.remove("valid");
+            cpf.classList.add("invalid");
+            msg.push(isCPF)
+        }
+        else {
+            cpf.classList.add("valid");
+            cpf.classList.remove("invalid");
+        }
     }
 
     if(cep.value.length > 0) isCEP = validaCEP(cep);
@@ -156,6 +161,6 @@ form.addEventListener('submit', function(event){
 
     if(msg.length == 0) {
         setTimeout(window.alert("Cadastro feito!"), 5000)
-        //form.submit();
+        form[0].reset();
     }
 });
