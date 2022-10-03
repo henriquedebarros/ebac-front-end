@@ -1,0 +1,24 @@
+html, body {
+    font-family: $ff-body;
+    font-size: $fs-default-body;
+    color: $font-color-body-default;
+}
+
+h1, h2, h3 {
+    font-family: $ff-title;
+    font-weight: normal;
+    letter-spacing: .2rem;
+}
+
+h2 {
+    font-size: $fs-big-title;
+}
+
+h3 {
+    font-size: $fs-default-title;
+    color: $font-color-title;
+}
+
+p {
+    line-height: 1.6;
+}

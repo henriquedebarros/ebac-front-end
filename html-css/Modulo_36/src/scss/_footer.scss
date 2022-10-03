@@ -1,0 +1,67 @@
+footer {
+    background-color: $bg-color-03;
+    color: $font-color-body-light;
+
+    
+    .container {
+        flex-wrap: nowrap;
+        
+        @media (max-width: 600px) {
+            flex-wrap: wrap;
+            gap: 1rem;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        
+        & > * {
+            @media (max-width: 400px) {
+                width: 100%;
+            }
+        }
+        img {    
+            @media (max-width: 400px) {
+                width: auto;
+                height: 100px;
+                margin: 0 auto;
+            }
+        }
+    }
+    
+    #logo_footer {
+        margin-right: 2rem;
+
+        @media (max-width: 400px) {
+            margin: 0 auto;
+        }
+
+        & + p {
+            margin-right: 2rem;
+
+            a {
+                color: $brand;
+                text-decoration: none;
+            }
+        }
+    }
+
+    #shadow {
+        display: block;
+
+        @media (max-width: 510px) {
+            display: none;
+        }
+    }
+
+    #icon_location {
+        margin-right: auto;
+
+        & + p {
+            text-align: right;
+
+            span {
+                color: $brand;
+                font-weight: bold;
+            }
+        }
+    }
+}
