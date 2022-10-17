@@ -1,0 +1,52 @@
+@import '../../styles/global.scss';
+
+.curator {
+    &__container {
+        width: 100%;
+        background-color: $green-faded;
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin: 4rem 0 6rem;
+    }
+    &__photo {
+        width: 8.5rem;
+        height: 8.5rem;
+        margin: 2rem;
+        border: 1px solid $lightGray;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    &__details {
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 4rem 0;
+
+        div {
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 1rem;
+
+            h3 {
+                font-size: 2rem;
+                line-height: 1;
+            }
+            h4 {
+                color: $gray-400;
+                font-size: 1.2rem;
+                line-height: 1;
+                margin: 0 1rem;
+            }
+        }
+        p {
+            width: 100%;
+            font-size: 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+@import '../../styles/global.scss';
+
+.card {
+    &__container {
+        width: 100%;
+        max-width: 222px;
+    }
+
+    &__image {
+        border: 1px solid $lightGray;
+        border-radius: 1rem;
+        height: 222px;
+        width: 100%;
+    }
+
+    &__content {
+        padding: 1.6rem;
+
+        h3 {
+            font-weight: 700;
+            font-size: 2.4rem;
+            line-height: 2.8rem;
+            color: $black;
+        }
+
+        p {
+            font-size: 1.8rem;
+            line-height: 2.1rem;
+            color: $black;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__facilities {
+        display: grid;
+        grid-template-columns: repeat(5, 3rem);
+        grid-gap: .5rem;
+        margin: 1rem 0;
+        list-style: none;
+
+        &__item {
+            width: 3rem;
+            height: 3rem;
+            border-radius: .5rem;
+            background-color: $blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 80%;
+            }
+
+            &--unchecked {
+                background-color: $lightGray;
+            }
+        }
+    }
+}
