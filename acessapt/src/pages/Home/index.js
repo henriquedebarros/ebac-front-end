@@ -22,7 +22,8 @@ const Home = () => {
     function capFirst(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
-
+    
+    let i = 0;
     return(
         <main id="main-content" className="home__container">
             <div className="home__col">
@@ -34,13 +35,17 @@ const Home = () => {
                 <p className="home__text">Checamos 10 itens essenciais de acessibilidade para pessoas com deficiência em diversos pontos da cidade.</p>
                 <div className="home__pills">
                     {
-                        Places.map((item) => (
-                            <Pills 
-                                local = {item}
-                                selected = {selectedPill === item}
-                                onClick = {() => setSelectedPill(item)}
-                            />
-                        ))
+                        Places.map((item) => {
+                            i++;
+                            return(
+                                <Pills 
+                                    local = {item}
+                                    selected = {selectedPill === item}
+                                    onClick = {() => setSelectedPill(item)}
+                                    key = {i}
+                                />
+                            )
+                        })
                     }
                 </div>
             </div>

@@ -1,0 +1,184 @@
+{
+    "places": [
+        {
+            "id": 1,
+            "name": "Torre de Belém",
+            "description": "A Torre de Belém é uma das atrações mais bonitas de Lisboa.",
+            "location": {"lat": "01234", "long": "01233"},
+            "facilities": [
+                {"item": 1, "status": false},
+                {"item": 2, "status": true},
+                {"item": 3, "status": false},
+                {"item": 4, "status": true},
+                {"item": 5, "status": false},
+                {"item": 6, "status": true},
+                {"item": 7, "status": true},
+                {"item": 8, "status": false},
+                {"item": 9, "status": true},
+                {"item": 10, "status": true}
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Padrão dos Descobrimentos",
+            "description": "O Padrão dos Descobrimentos é um monumento em forma de caravela com 56m de altura.",
+            "location": {"lat": "01234", "long": "01233"},
+            "facilities": [
+                {"item": 1, "status": false},
+                {"item": 2, "status": true},
+                {"item": 3, "status": true},
+                {"item": 4, "status": true},
+                {"item": 5, "status": true},
+                {"item": 6, "status": true},
+                {"item": 7, "status": true},
+                {"item": 8, "status": true},
+                {"item": 9, "status": true},
+                {"item": 10, "status": true}
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Bairro do Chiado",
+            "description": "O bairro do Chiado é um dos mais interessantes de Lisboa.",
+            "location": {"lat": "01234", "long": "01233"},
+            "facilities": [
+                {"item": 1, "status": false},
+                {"item": 2, "status": true},
+                {"item": 3, "status": true},
+                {"item": 4, "status": true},
+                {"item": 5, "status": true},
+                {"item": 6, "status": true},
+                {"item": 7, "status": true},
+                {"item": 8, "status": true},
+                {"item": 9, "status": true},
+                {"item": 10, "status": true}
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Mosteiro dos Jerônimos",
+            "description": "Construído no século XVI, o Mosteiro dos Jerônimos é um dos lugares para conhecer.",
+            "location": {"lat": "01234", "long": "01233"},
+            "facilities": [
+                {"item": 1, "status": false},
+                {"item": 2, "status": true},
+                {"item": 3, "status": true},
+                {"item": 4, "status": true},
+                {"item": 5, "status": true},
+                {"item": 6, "status": true},
+                {"item": 7, "status": true},
+                {"item": 8, "status": true},
+                {"item": 9, "status": true},
+                {"item": 10, "status": true}
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Castelo de São Jorge",
+            "description": "A visita ao castelo de São Jorge, com uma bela vista da cidade, é um ponto turístico incrível.",
+            "location": {"lat": "01234", "long": "01233"},
+            "facilities": [
+                {"item": 1, "status": false},
+                {"item": 2, "status": true},
+                {"item": 3, "status": true},
+                {"item": 4, "status": true},
+                {"item": 5, "status": false},
+                {"item": 6, "status": true},
+                {"item": 7, "status": true},
+                {"item": 8, "status": false},
+                {"item": 9, "status": true},
+                {"item": 10, "status": true}
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Praça do Comércio",
+            "description": "Também conhecida como Terreiro do Paço, a Praça do Comércio está localizada na Baixa.",
+            "location": {"lat": "01234", "long": "01233"},
+            "facilities": [
+                {"item": 1, "status": false},
+                {"item": 2, "status": true},
+                {"item": 3, "status": true},
+                {"item": 4, "status": true},
+                {"item": 5, "status": true},
+                {"item": 6, "status": true},
+                {"item": 7, "status": true},
+                {"item": 8, "status": true},
+                {"item": 9, "status": true},
+                {"item": 10, "status": true}
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Convento do Carmo",
+            "description": "Localizado no Largo do Carmo, no bairro Rossio, o Convento do Carmo já foi a principal igreja gótica de Lisboa.",
+            "location": {"lat": "01234", "long": "01233"},
+            "facilities": [
+                {"item": 1, "status": false},
+                {"item": 2, "status": true},
+                {"item": 3, "status": true},
+                {"item": 4, "status": true},
+                {"item": 5, "status": true},
+                {"item": 6, "status": true},
+                {"item": 7, "status": true},
+                {"item": 8, "status": true},
+                {"item": 9, "status": true},
+                {"item": 10, "status": true}
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Sé de Lisboa",
+            "description": "Em Portugal “Sé” são as maiores catedrais do país, por isso, existem tantas espalhadas pelo território.",
+            "location": {"lat": "01234", "long": "01233"},
+            "facilities": [
+                {"item": 1, "status": false},
+                {"item": 2, "status": true},
+                {"item": 3, "status": true},
+                {"item": 4, "status": true},
+                {"item": 5, "status": true},
+                {"item": 6, "status": true},
+                {"item": 7, "status": true},
+                {"item": 8, "status": true},
+                {"item": 9, "status": true},
+                {"item": 10, "status": true}
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Largo de São Domingos",
+            "description": "O Largo de São Domingos é um lugar histórico que marca as perseguições e humilhações contra os judeus que ocorreu em 1506.",
+            "location": {"lat": "01234", "long": "01233"},
+            "facilities": [
+                {"item": 1, "status": false},
+                {"item": 2, "status": true},
+                {"item": 3, "status": true},
+                {"item": 4, "status": true},
+                {"item": 5, "status": true},
+                {"item": 6, "status": true},
+                {"item": 7, "status": true},
+                {"item": 8, "status": true},
+                {"item": 9, "status": true},
+                {"item": 10, "status": true}
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Miradouro",
+            "description": "Como Lisboa está entre colinas, a cidade faz bom proveito de seus pontos de observação natural.",
+            "location": {"lat": "01234", "long": "01233"},
+            "facilities": [
+                {"item": 1, "status": false},
+                {"item": 2, "status": true},
+                {"item": 3, "status": true},
+                {"item": 4, "status": true},
+                {"item": 5, "status": true},
+                {"item": 6, "status": true},
+                {"item": 7, "status": true},
+                {"item": 8, "status": true},
+                {"item": 9, "status": true},
+                {"item": 10, "status": true}
+            ]
+        }
+    ]
+}
