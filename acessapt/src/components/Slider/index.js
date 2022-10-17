@@ -24,11 +24,11 @@ function Slider(){
     }, [filteredPlaces])
 
     return(
-        <Swiper slidesPerView={places.length > 1 ? 1 : places.length}
+        <Swiper
             breakpoints={{
-                500: {slidesPerView: places.length > 2 ? 2 : places.length},
-                768: {slidesPerView: places.length > 3 ? 3 : places.length},
-                1024: {slidesPerView: places.length > 4 ? 4 : places.length}
+                500: {slidesPerView: 2},
+                768: {slidesPerView: 3},
+                1024: {slidesPerView: 4}
             }}>
             {
                 places.map(item => {
@@ -38,7 +38,6 @@ function Slider(){
                     </SwiperSlide>)
                 })
             }
-            
         </Swiper>
     )
 }

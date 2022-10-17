@@ -3,6 +3,7 @@
         {
             "id": 1,
             "name": "Torre de Belém",
+            "image": "places/torre-belem.jpg",
             "description": "A Torre de Belém é uma das atrações mais bonitas de Lisboa.",
             "location": {"lat": "01234", "long": "01233"},
             "facilities": [
@@ -21,6 +22,7 @@
         {
             "id": 2,
             "name": "Padrão dos Descobrimentos",
+            "image": "places/padrao-descobrimentos.jpg",
             "description": "O Padrão dos Descobrimentos é um monumento em forma de caravela com 56m de altura.",
             "location": {"lat": "01234", "long": "01233"},
             "facilities": [
@@ -39,6 +41,7 @@
         {
             "id": 3,
             "name": "Bairro do Chiado",
+            "image": "places/chiado.jpg",
             "description": "O bairro do Chiado é um dos mais interessantes de Lisboa.",
             "location": {"lat": "01234", "long": "01233"},
             "facilities": [
@@ -57,6 +60,7 @@
         {
             "id": 4,
             "name": "Mosteiro dos Jerônimos",
+            "image": "places/mosteiro-jeronimos.jpg",
             "description": "Construído no século XVI, o Mosteiro dos Jerônimos é um dos lugares para conhecer.",
             "location": {"lat": "01234", "long": "01233"},
             "facilities": [
@@ -75,6 +79,7 @@
         {
             "id": 5,
             "name": "Castelo de São Jorge",
+            "image": "places/castelo-saojorge.webp",
             "description": "A visita ao castelo de São Jorge, com uma bela vista da cidade, é um ponto turístico incrível.",
             "location": {"lat": "01234", "long": "01233"},
             "facilities": [
@@ -93,6 +98,7 @@
         {
             "id": 6,
             "name": "Praça do Comércio",
+            "image": "places/praca-comercio.jpg",
             "description": "Também conhecida como Terreiro do Paço, a Praça do Comércio está localizada na Baixa.",
             "location": {"lat": "01234", "long": "01233"},
             "facilities": [
@@ -111,6 +117,7 @@
         {
             "id": 7,
             "name": "Convento do Carmo",
+            "image": "places/convento-carmo.jpg",
             "description": "Localizado no Largo do Carmo, no bairro Rossio, o Convento do Carmo já foi a principal igreja gótica de Lisboa.",
             "location": {"lat": "01234", "long": "01233"},
             "facilities": [
@@ -129,6 +136,7 @@
         {
             "id": 8,
             "name": "Sé de Lisboa",
+            "image": "places/se-lisboa.jpg",
             "description": "Em Portugal “Sé” são as maiores catedrais do país, por isso, existem tantas espalhadas pelo território.",
             "location": {"lat": "01234", "long": "01233"},
             "facilities": [
@@ -147,6 +155,7 @@
         {
             "id": 9,
             "name": "Largo de São Domingos",
+            "image": "places/sao-domingos.jpg",
             "description": "O Largo de São Domingos é um lugar histórico que marca as perseguições e humilhações contra os judeus que ocorreu em 1506.",
             "location": {"lat": "01234", "long": "01233"},
             "facilities": [
@@ -165,6 +174,7 @@
         {
             "id": 10,
             "name": "Miradouro",
+            "image": "places/miradouro.jpg",
             "description": "Como Lisboa está entre colinas, a cidade faz bom proveito de seus pontos de observação natural.",
             "location": {"lat": "01234", "long": "01233"},
             "facilities": [
