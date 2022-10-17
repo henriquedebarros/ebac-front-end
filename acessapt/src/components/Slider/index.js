@@ -8,7 +8,24 @@ SwiperCore.use(Pagination);
 
 function Slider(){
     return(
-        <Swiper slidesPerView={5}>
+        <Swiper slidesPerView={1}
+            breakpoints={{
+                500: {slidesPerView: 2},
+                768: {slidesPerView: 3},
+                1024: {slidesPerView: 4}
+            }}>
+            <SwiperSlide>
+                <Card />
+            </SwiperSlide>
+            <SwiperSlide>
+                <Card />
+            </SwiperSlide>
+            <SwiperSlide>
+                <Card />
+            </SwiperSlide>
+            <SwiperSlide>
+                <Card />
+            </SwiperSlide>
             <SwiperSlide>
                 <Card />
             </SwiperSlide>

@@ -15,12 +15,14 @@ const config = {
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <><div className='main__wrapper'>
-    <div className="main__container">
-      <Header city={config.city} country={config.country} />
-      <Home city={config.city} />
-      <Places />
-      <Curator />
-    </div>
-  </div><Footer /></>
+  <React.Fragment>
+    <div className='main__wrapper'>
+      <div className="main__container">
+        <Header city={config.city} country={config.country} />
+        <Home city={config.city} />
+        <Places />
+        <Curator />
+      </div>
+    </div><Footer />
+  </React.Fragment>
 );

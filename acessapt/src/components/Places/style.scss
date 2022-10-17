@@ -1,9 +1,10 @@
-@import '../../styles/global.scss';
+@import '../../styles/global';
+@import '../../styles/responsive';
 
 @mixin displayFlexRow($width: 100%) {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: $width;
     justify-content: space-between;
 }
@@ -14,6 +15,10 @@
     &__header {
         @include displayFlexRow();
         margin-bottom: 4rem;
+
+        @media (max-width: $mobileLarge) {
+            flex-wrap: wrap;
+        }
     }
 
     &__title {
@@ -30,6 +35,10 @@
         border-bottom: 1px solid $black;
         align-items: center;
         padding: .4rem 1.5rem;
+        
+        @media (max-width: $mobileLarge) {
+            margin-top: 1rem;
+        }
 
         h3 {
             color: $gray-300;

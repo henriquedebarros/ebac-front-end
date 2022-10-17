@@ -3,7 +3,8 @@
 .card {
     &__container {
         width: 100%;
-        max-width: 222px;
+        //max-width: 222px;
+        padding: 0 1rem;
     }
 
     &__image {

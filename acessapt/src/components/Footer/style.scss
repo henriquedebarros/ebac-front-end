@@ -1,4 +1,5 @@
 @import '../../styles/global.scss';
+@import '../../styles/responsive';
 
 .footer {
     width: 100%;
@@ -10,6 +11,11 @@
 
         p {
             width: 95%;
+        }
+
+        @media (max-width: $mobileLarge) {
+            flex-direction: column;
+            align-items: center;
         }
     }
 
@@ -50,5 +56,20 @@
         box-shadow: 1px 1px 4px rgb(0, 0, 0, .2);
         padding: 1rem;
         align-self: flex-end;
+
+        @media (max-width: $mobileLarge) {
+            align-self: center;
+            margin-top: 2rem;
+        }
+    }
+
+    @media (max-width: $mobileLarge) {
+        p {
+            font-size: 1.5rem;
+        }
+
+        small {
+            margin-top: 1rem;
+        }
     }
 }
