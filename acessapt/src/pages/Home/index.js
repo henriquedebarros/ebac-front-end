@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
+import { useParams } from 'react-router';
+import { LocationContext } from '../../contexts/LocationContext';
 import './style.scss';
 import imagemDestaque from '../../images/imagem-destaque.png';
 import Pills from '../../components/Pills';
@@ -7,12 +9,24 @@ const Places = [
     'Praça', 'Parque', 'Igreja', 'Hotel', 'Restaurante', 'Zoológico', 'Farmácia', 'Loja', 'Aquário'
 ]
 
-const Home = props => {
+const Home = () => {
     const [selectedPill, setSelectedPill] = useState('');
+    const {city, country} = useParams();
+    const {setCity, setCountry} = useContext(LocationContext);
+
+    useEffect(() => {
+        setCity(city)
+        setCountry(country)
+    }, [city, setCity, country, setCountry])
+
+    function capFirst(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+
     return(
         <main id="main-content" className="home__container">
             <div className="home__col">
-                <h1 className="home__title">{props.city} para toda a gente!</h1>
+                <h1 className="home__title">{capFirst(city)} para toda a gente!</h1>
                 <div className="home__image home__image--destaque hide-desktop">
                     <img src={imagemDestaque} alt="" />
                 </div>
