@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.scss';
-import Button from '../Button';
+//import Button from '../Button';
 import iconBraile from '../../images/icon-braile.png';
 import iconAudio from '../../images/icon-audio-descricao.png';
 import iconBanheiro from '../../images/icon-banheiro-acessivel.png';
@@ -18,7 +18,7 @@ const Card = ({item}) => {
     return(
         <div className="card__container">
             <div className="card__image">
-                <img src={imagePath.default} alt={item.name} title={item.name} />
+                <img src={imagePath} alt={item.name} title={item.name} />
             </div>
             <div className="card__content">
                 <h3>{item.name}</h3>
@@ -55,7 +55,8 @@ const Card = ({item}) => {
                     </li>
                 </ul>
                 <p>{item.description}</p>
-                <Button>Como chegar</Button>
+                <a className="button" href={item.link} target="_blank" rel="noreferrer">Como chegar</a>
+                {/* <Button>Como chegar</Button> */}
             </div>
         </div>
     )

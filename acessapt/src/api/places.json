@@ -4,7 +4,9 @@
             "id": 1,
             "name": "Torre de Belém",
             "image": "places/torre-belem.jpg",
+            "category": "Museus",
             "description": "A Torre de Belém é uma das atrações mais bonitas de Lisboa.",
+            "link" : "https://www.google.com/maps/place/Torre+de+Bel%C3%A9m/@38.6915462,-9.2181787,17z/data=!3m2!4b1!5s0xd1ecb6968ca6973:0x7ffc53d5b48b9149!4m5!3m4!1s0xd1ecba1f920804b:0x409412f1880b452d!8m2!3d38.691542!4d-9.21599",
             "location": {"lat": "01234", "long": "01233"},
             "facilities": [
                 {"item": 1, "status": false},
@@ -23,7 +25,9 @@
             "id": 2,
             "name": "Padrão dos Descobrimentos",
             "image": "places/padrao-descobrimentos.jpg",
+            "category": "Museus",
             "description": "O Padrão dos Descobrimentos é um monumento em forma de caravela com 56m de altura.",
+            "link" : "https://www.google.com/maps/place/Padr%C3%A3o+dos+Descobrimentos/@38.6936015,-9.2079002,17z/data=!3m1!4b1!4m5!3m4!1s0xd1ecb440d5eca49:0x7f48f00e8bf9e619!8m2!3d38.6935973!4d-9.2057115",
             "location": {"lat": "01234", "long": "01233"},
             "facilities": [
                 {"item": 1, "status": false},
@@ -42,7 +46,9 @@
             "id": 3,
             "name": "Bairro do Chiado",
             "image": "places/chiado.jpg",
+            "category": "Museus",
             "description": "O bairro do Chiado é um dos mais interessantes de Lisboa.",
+            "link" : "https://www.google.com/maps/place/Chiado,+1200-443+Lisboa,+Portugal/@38.7105582,-9.1509587,15z/data=!3m1!4b1!4m5!3m4!1s0xd19347f02a6390f:0xe0051c566fdc1e97!8m2!3d38.7105423!4d-9.1422039",
             "location": {"lat": "01234", "long": "01233"},
             "facilities": [
                 {"item": 1, "status": false},
@@ -59,9 +65,11 @@
         },
         {
             "id": 4,
-            "name": "Mosteiro dos Jerônimos",
+            "name": "Mosteiro dos Jerónimos",
             "image": "places/mosteiro-jeronimos.jpg",
+            "category": "Museus",
             "description": "Construído no século XVI, o Mosteiro dos Jerônimos é um dos lugares para conhecer.",
+            "link" : "https://www.google.com/maps/place/Mosteiro+dos+Jer%C3%B3nimos/@38.6978951,-9.2088926,17z/data=!3m1!4b1!4m5!3m4!1s0xd1ecb42c3c29c4b:0x87755d348e96ebed!8m2!3d38.6978909!4d-9.2067039",
             "location": {"lat": "01234", "long": "01233"},
             "facilities": [
                 {"item": 1, "status": false},
@@ -80,7 +88,9 @@
             "id": 5,
             "name": "Castelo de São Jorge",
             "image": "places/castelo-saojorge.webp",
+            "category": "Museus",
             "description": "A visita ao castelo de São Jorge, com uma bela vista da cidade, é um ponto turístico incrível.",
+            "link" : "https://www.google.com/maps/place/Castelo+de+S.+Jorge/@38.7139134,-9.1356649,17z/data=!3m1!4b1!4m5!3m4!1s0xd193477b40ec39b:0xb4c0704199e433d7!8m2!3d38.7139092!4d-9.1334762",
             "location": {"lat": "01234", "long": "01233"},
             "facilities": [
                 {"item": 1, "status": false},
@@ -99,7 +109,9 @@
             "id": 6,
             "name": "Praça do Comércio",
             "image": "places/praca-comercio.jpg",
+            "category": "Praças",
             "description": "Também conhecida como Terreiro do Paço, a Praça do Comércio está localizada na Baixa.",
+            "link" : "https://www.google.com/maps/place/Pra%C3%A7a+do+Com%C3%A9rcio,+1100-148+Lisboa,+Portugal/@38.7078875,-9.1379175,17z/data=!3m1!4b1!4m5!3m4!1s0xd19347a3a8d6cdd:0x862fb078147ae2b6!8m2!3d38.7078875!4d-9.1357288",
             "location": {"lat": "01234", "long": "01233"},
             "facilities": [
                 {"item": 1, "status": false},
@@ -118,7 +130,9 @@
             "id": 7,
             "name": "Convento do Carmo",
             "image": "places/convento-carmo.jpg",
+            "category": "Igrejas",
             "description": "Localizado no Largo do Carmo, no bairro Rossio, o Convento do Carmo já foi a principal igreja gótica de Lisboa.",
+            "link" : "https://www.google.com/maps/place/Museu+Arqueol%C3%B3gico+do+Carmo/@38.7121406,-9.1444733,17z/data=!3m1!4b1!4m5!3m4!1s0xd19347f372ec63f:0x32d7f56592e02cef!8m2!3d38.7121407!4d-9.1402461",
             "location": {"lat": "01234", "long": "01233"},
             "facilities": [
                 {"item": 1, "status": false},
@@ -137,7 +151,9 @@
             "id": 8,
             "name": "Sé de Lisboa",
             "image": "places/se-lisboa.jpg",
+            "category": "Igrejas",
             "description": "Em Portugal “Sé” são as maiores catedrais do país, por isso, existem tantas espalhadas pelo território.",
+            "link" : "https://www.google.com/maps/place/Museu+Arqueol%C3%B3gico+do+Carmo/@38.7121406,-9.1444733,17z/data=!3m1!4b1!4m5!3m4!1s0xd19347f372ec63f:0x32d7f56592e02cef!8m2!3d38.7121407!4d-9.1402461",
             "location": {"lat": "01234", "long": "01233"},
             "facilities": [
                 {"item": 1, "status": false},
@@ -156,7 +172,9 @@
             "id": 9,
             "name": "Largo de São Domingos",
             "image": "places/sao-domingos.jpg",
+            "category": "Praças",
             "description": "O Largo de São Domingos é um lugar histórico que marca as perseguições e humilhações contra os judeus que ocorreu em 1506.",
+            "link" : "https://www.google.com/maps/place/Largo+de+S%C3%A3o+Domingos/@38.7155737,-9.141467,17z/data=!3m2!4b1!5s0xd19338725e8e333:0xcfaf560ef54fea5f!4m5!3m4!1s0xd1933873945f67b:0x98a8bc5b83d4bed6!8m2!3d38.7155737!4d-9.1392783",
             "location": {"lat": "01234", "long": "01233"},
             "facilities": [
                 {"item": 1, "status": false},
@@ -173,9 +191,53 @@
         },
         {
             "id": 10,
-            "name": "Miradouro",
+            "name": "Miradouro de Santa Luzia",
             "image": "places/miradouro.jpg",
+            "category": "Miradouros",
             "description": "Como Lisboa está entre colinas, a cidade faz bom proveito de seus pontos de observação natural.",
+            "link" : "https://www.google.com/maps/place/Miradouro+de+Santa+Luzia/@38.7122063,-9.1367401,15.83z/data=!4m5!3m4!1s0xd1933849770e4c7:0x41203b21edcd2769!8m2!3d38.7116956!4d-9.1301972",
+            "location": {"lat": "01234", "long": "01233"},
+            "facilities": [
+                {"item": 1, "status": false},
+                {"item": 2, "status": true},
+                {"item": 3, "status": true},
+                {"item": 4, "status": true},
+                {"item": 5, "status": true},
+                {"item": 6, "status": true},
+                {"item": 7, "status": true},
+                {"item": 8, "status": true},
+                {"item": 9, "status": true},
+                {"item": 10, "status": true}
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Parque Eduardo VII",
+            "image": "places/parque-eduardo-viii.jpg",
+            "category": "Parques",
+            "description": "Um dos parques mais famosos da cidade e que tem uma bela vista da Marquês de Pombal.",
+            "link" : "https://www.google.com/maps/place/Parque+Eduardo+VII/@38.7283001,-9.1548715,17z/data=!3m1!4b1!4m5!3m4!1s0xd1933714bb401f5:0xa9b00861ee1aa2c2!8m2!3d38.7283001!4d-9.1526828",
+            "location": {"lat": "01234", "long": "01233"},
+            "facilities": [
+                {"item": 1, "status": false},
+                {"item": 2, "status": true},
+                {"item": 3, "status": true},
+                {"item": 4, "status": true},
+                {"item": 5, "status": true},
+                {"item": 6, "status": true},
+                {"item": 7, "status": true},
+                {"item": 8, "status": true},
+                {"item": 9, "status": true},
+                {"item": 10, "status": true}
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Jardim Zoológico",
+            "image": "places/jardim-zoo.jpg",
+            "category": "Para crianças",
+            "description": "Jardim Zoológico com vários animais resgatados.",
+            "link" : "https://www.google.com/maps/place/Jardim+Zool%C3%B3gico+de+Lisboa/@38.7443615,-9.1729059,17z/data=!3m1!4b1!4m5!3m4!1s0xd193323a502a477:0x44abde7aadf0d25d!8m2!3d38.7443615!4d-9.1707172",
             "location": {"lat": "01234", "long": "01233"},
             "facilities": [
                 {"item": 1, "status": false},

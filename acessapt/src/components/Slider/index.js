@@ -9,12 +9,12 @@ import Card from '../Card';
 SwiperCore.use(Pagination);
 
 function Slider(){
-    const {filteredPlaces, setFilteredPlaces} = useContext(FilterContext);
+    const {filteredPlaces} = useContext(FilterContext);
     const [places, setPlaces] = useState([]);
 
     useEffect(() => {
         const fetchPlaces = async () => {
-            const result = await api.get(`http://localhost:3333/places`);
+            const result = await api.get(`http://localhost:3333/places?category_like=${filteredPlaces}`);
 
             if(result.status === 200) {
                 setPlaces(result.data);
