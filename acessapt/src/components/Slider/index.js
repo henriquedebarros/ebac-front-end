@@ -14,15 +14,18 @@ function Slider(){
 
     useEffect(() => {
         const fetchPlaces = async () => {
-            const result = await api.get(`http://localhost:3333/places?category_like=${filteredPlaces}`);
+            const result = await api.get(`https://api.jsonbin.io/v3/b/634ea7b52b3499323be2b21d?category=${filteredPlaces ? filteredPlaces : ''}`);
 
-            if(result.status === 200) {
-                setPlaces(result.data);
+            if(result.status === 200 || result.status === 304) {
+                let allData = result.data.record.places;
+                let dataFiltered = allData.filter(element => element.category === filteredPlaces);
+                if(dataFiltered == "") dataFiltered = allData;
+                setPlaces(dataFiltered);
             }
         }
         fetchPlaces();
     }, [filteredPlaces])
-
+    
     return(
         <Swiper
             breakpoints={{

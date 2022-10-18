@@ -40,8 +40,8 @@ const Home = () => {
                 <div className="home__image home__image--destaque hide-desktop">
                     <img src={imagemDestaque} alt="" />
                 </div>
-                <p className="home__text">Nossa missão é facilitar o encontro entre lugares inclusivos e pessoas que buscam alternativas culturais para sair de casa, com a mobilidade que todo cidadão precisa.</p>
-                <p className="home__text">Checamos 10 itens essenciais de acessibilidade para pessoas com deficiência em diversos pontos da cidade.</p>
+                <p className="home__text">Nossa missão é facilitar o encontro entre lugares inclusivos e pessoas que procuraram alternativas culturais para sair de casa, com a mobilidade que todo o cidadão necessita.</p>
+                <p className="home__text">Verificamos 10 pontos essenciais de acessibilidade para pessoas com deficiência em variados locais da cidade.</p>
                 <div className="home__pills">
                     {
                         Places.map((item) => {
