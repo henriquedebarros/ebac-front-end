@@ -1,0 +1,33 @@
+@import "../../styles/global.scss";
+
+.card {
+    width: 100%;
+    background-color: $color-primary;
+    counter-increment: contPe;
+    position: relative;
+    padding: 1.5rem;
+    isolation: isolate;
+
+    &__title {
+        font-size: $fs-500;
+        color: $color-light;
+        margin: 4rem 0 3rem;
+    }
+
+    &__body {
+        color: $color-light;
+        font-size: $fs-400;
+    }
+
+    &__marker {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        font-size: $fs-900;
+        font-weight: bold;
+        color: $color-dark-400;
+        opacity: 0.1;
+        line-height: 1;
+    }
+}

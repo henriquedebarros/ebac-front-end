@@ -1,0 +1,16 @@
+@import '../../styles/global';
+
+.primaryNav {
+    display: flex;
+    gap: 3rem;
+    
+    &__link {
+        font-size: $fs-300;
+        color: $color-dark-400;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}

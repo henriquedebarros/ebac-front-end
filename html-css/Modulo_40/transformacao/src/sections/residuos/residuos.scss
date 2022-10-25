@@ -1,0 +1,19 @@
+.residuos {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    margin: 6rem 4rem;
+
+    &__text {
+        text-align: center;
+    }
+    
+    &__lista {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
+    }
+}

@@ -1,0 +1,26 @@
+@import '../../styles/global.scss';
+
+button {
+    background-color: $color-light;
+    color: $color-primary;
+    border: 1px solid $color-dark-400;
+    padding: .5rem 1rem;
+    font-size: $fs-400;
+    font-weight: 600;
+    opacity: 0.5;
+
+    &:hover {
+        background-color: $color-light;
+        color: $color-primary;
+        border: 1px solid $color-primary;
+        cursor: pointer;
+        opacity: 1;
+    }
+
+    &:active {
+        background-color: $color-primary;
+        color: $color-light;
+        border: 1px solid transparent;
+        opacity: 1;
+    }
+}

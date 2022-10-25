@@ -1,0 +1,17 @@
+.localizacao {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin: 6rem 0;
+
+    &__text {
+        text-align: center;
+    }
+
+    &__map {
+        width: 70%;
+        aspect-ratio: 4/3;
+    }
+}

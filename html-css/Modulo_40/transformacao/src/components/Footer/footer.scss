@@ -1,0 +1,25 @@
+@import '../../styles/global';
+
+.footer {
+    width: 100%;
+    background-color: $color-dark-400;
+
+    &__container{
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+    }
+    
+    &__logo--inverse{
+        width: 100px;
+    }
+
+    &__copy{
+        text-align: right;
+        font-size: $fs-300;
+        color: $color-light;
+    }
+}
