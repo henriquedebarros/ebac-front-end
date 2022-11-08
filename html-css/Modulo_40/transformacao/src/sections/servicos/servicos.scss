@@ -14,5 +14,9 @@
         display: flex;
         gap: 1rem;
         list-style: none;
+
+        @media (max-width: 800px) {
+            flex-wrap: wrap;
+        }
     }
 }

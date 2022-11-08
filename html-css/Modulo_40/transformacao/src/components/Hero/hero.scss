@@ -1,7 +1,14 @@
 .hero {
+    width: 100%;
     display: flex;
     gap: 3rem;
     margin: 2rem 0;
+    flex-direction: row;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+        align-items: center;
+    }
 
     &__image {
         width: 60%;
@@ -14,6 +21,10 @@
                 animation: show_sub 6s infinite;
             }
         }
+
+        @media (max-width: 800px) {
+            width: 100%;
+        }
     }
 
     &__containerText {
@@ -21,6 +32,10 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+
+        @media (max-width: 800px) {
+            width: 70%;
+        }
     }
 
     &__title {
@@ -29,6 +44,10 @@
 
     &__text {
         margin-bottom: 4rem;
+
+        @media (max-width: 800px) {
+            margin-bottom: 2rem;
+        }
     }
 }
 

@@ -7,6 +7,7 @@
     position: relative;
     padding: 1.5rem;
     isolation: isolate;
+    box-sizing: border-box;
 
     &__title {
         font-size: $fs-500;

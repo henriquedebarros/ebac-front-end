@@ -2,7 +2,16 @@
 
 .primaryNav {
     display: flex;
+    flex-direction: row;
     gap: 3rem;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+        margin-top: 1rem;
+        font-size: $fs-400;
+    }
     
     &__link {
         font-size: $fs-300;
@@ -11,6 +20,10 @@
 
         &:hover {
             color: $color-primary;
+        }
+
+        @media (max-width: 800px) {
+            font-size: $fs-400;
         }
     }
 }
